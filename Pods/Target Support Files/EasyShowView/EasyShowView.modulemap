@@ -1,0 +1,6 @@
+framework module EasyShowView {
+  umbrella header "EasyShowView-umbrella.h"
+
+  export *
+  module * { export * }
+}
