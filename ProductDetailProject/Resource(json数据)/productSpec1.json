@@ -1,0 +1,336 @@
+{
+    "status": 200,
+    "message": "获取成功",
+    "data": {
+        "spec": [
+                 {
+                 "key": "颜色",
+                 "value": [
+                           "左岸香颂",
+                           "芬妮",
+                           "天使纱裙",
+                           "雨露晨风",
+                           "榭莉儿",
+                           "洛丽安曲\t",
+                           "乔伊（粉）",
+                           "摩登佳丽",
+                           "夏日柠檬茶",
+                           "乐途",
+                           "海洋记忆",
+                           "风铃",
+                           "韵香（紫）",
+                           "韵香（绿）",
+                           "萌萌哒"
+                           ]
+                 },
+                 {
+                 "key": "尺码",
+                 "value": [
+                           "200*230cm"
+                           ]
+                 }
+                 ],
+        "list": [
+                 {
+                 "spec_id": 3733,
+                 "product_id": 402,
+                 "spec_1": "左岸香颂",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 501,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "左岸香颂,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "左岸香颂"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3734,
+                 "product_id": 402,
+                 "spec_1": "芬妮",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "芬妮,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "芬妮"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3735,
+                 "product_id": 402,
+                 "spec_1": "天使纱裙",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "天使纱裙,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "天使纱裙"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3736,
+                 "product_id": 402,
+                 "spec_1": "雨露晨风",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "雨露晨风,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "雨露晨风"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3737,
+                 "product_id": 402,
+                 "spec_1": "榭莉儿",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "榭莉儿,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "榭莉儿"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3738,
+                 "product_id": 402,
+                 "spec_1": "洛丽安曲\t",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "洛丽安曲\t,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "洛丽安曲\t"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3739,
+                 "product_id": 402,
+                 "spec_1": "乔伊（粉）",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "乔伊（粉）,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "乔伊（粉）"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3740,
+                 "product_id": 402,
+                 "spec_1": "摩登佳丽",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "摩登佳丽,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "摩登佳丽"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3741,
+                 "product_id": 402,
+                 "spec_1": "夏日柠檬茶",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "夏日柠檬茶,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "夏日柠檬茶"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3742,
+                 "product_id": 402,
+                 "spec_1": "乐途",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "乐途,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "乐途"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3743,
+                 "product_id": 402,
+                 "spec_1": "海洋记忆",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "海洋记忆,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "海洋记忆"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3744,
+                 "product_id": 402,
+                 "spec_1": "风铃",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "风铃,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "风铃"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3745,
+                 "product_id": 402,
+                 "spec_1": "韵香（紫）",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "韵香（紫）,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "韵香（紫）"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3746,
+                 "product_id": 402,
+                 "spec_1": "韵香（绿）",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "韵香（绿）,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "韵香（绿）"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 3747,
+                 "product_id": 402,
+                 "spec_1": "萌萌哒",
+                 "spec_2": "200*230cm",
+                 "price": "318.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                 "spec": "萌萌哒,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "萌萌哒"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 }
+                 ]
+    }
+}

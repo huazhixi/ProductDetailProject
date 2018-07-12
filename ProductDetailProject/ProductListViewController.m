@@ -84,6 +84,7 @@ static NSString *const TCGoodsCellID = @"TCGoodsCell";
     TCGoodsModel *goodsModel = [TCGoodsModel mj_objectWithKeyValues:productlistDic[@"data"]];
     
     TCBabyDeailtyRootVC *detailRootVC = [TCBabyDeailtyRootVC new];
+    detailRootVC.goodsID = @"402";
     detailRootVC.goodsModel = goodsModel;
     [self.navigationController pushViewController:detailRootVC animated:YES];
 }

@@ -160,10 +160,10 @@
         _vc1.delegate = self;
         _vc1.titileLbl = self.titileLbl;
         _vc1.segmentBar        = self.segmentVC.segmentBar;
-        
         _vc1.fatherVC          = self;
         _vc1.goodsModel = self.goodsModel;
         _vc1.goods_img = _goods_img;
+        _vc1.goods_id = _goodsID;
     }
     return _vc1;
 }

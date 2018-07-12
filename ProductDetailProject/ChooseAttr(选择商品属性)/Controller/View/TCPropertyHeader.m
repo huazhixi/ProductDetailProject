@@ -32,7 +32,7 @@
     
     [_headernameL mas_makeConstraints:^(MASConstraintMaker *make){
         make.centerY.equalTo(self);
-        make.left.equalTo(self).offset(Padding);
+        make.left.equalTo(self).offset(10);
     }];
 }
 @end

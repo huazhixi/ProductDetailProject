@@ -27,8 +27,8 @@
 
 #import "TCBabyDeailtyBottomToolsView.h"
 #import "TCGoodsParameterView.h"
+#import "TCChooseGoodsAttributeViewController.h"
 //#import "TCBabyDeailtyCouponView.h"
-//#import "TCChooseGoodsAttributeViewController.h"
 //#import "TCShopHomeViewController.h"
 //#import "TCShopGoodsCategeryViewController.h"
 //#import "TCShopCartViewController.h"
@@ -161,16 +161,17 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
 //        return;
 //    }
     
-//    TCChooseGoodsAttributeViewController *chooseGoodsAttributeVC = [TCChooseGoodsAttributeViewController new];
-//    chooseGoodsAttributeVC.isFromBuyCart = NO;
-//    chooseGoodsAttributeVC.fromBuyNowBtn = isFromBuyNow;
-//    chooseGoodsAttributeVC.fatherVC = self;
+    TCChooseGoodsAttributeViewController *chooseGoodsAttributeVC = [TCChooseGoodsAttributeViewController new];
+    chooseGoodsAttributeVC.isFromBuyCart = NO;
+    chooseGoodsAttributeVC.fromBuyNowBtn = isFromBuyNow;
+    chooseGoodsAttributeVC.fatherVC = self;
 //    chooseGoodsAttributeVC.goods_id = s_Integer(_goodsModel.goodsInfo.goods_id);
-//    chooseGoodsAttributeVC.goodsModel = _goodsModel;
-//    chooseGoodsAttributeVC.goods_img = _goods_img;
-//    chooseGoodsAttributeVC.store_id = self.goodsModel.storeInfo.store_id;
-//    XPSemiModalConfiguration *config = [XPSemiModalConfiguration defaultConfiguration];
-//    [self presentSemiModalViewController:chooseGoodsAttributeVC contentHeight:SCREEN_HEIGHT - 200 configuration:config completion:nil];
+    chooseGoodsAttributeVC.goods_id = _goods_id;
+    chooseGoodsAttributeVC.goodsModel = _goodsModel;
+    chooseGoodsAttributeVC.goods_img = @"/homebank/goods_images/2018-06/152785527347647935.jpg";
+    chooseGoodsAttributeVC.store_id = self.goodsModel.storeInfo.store_id;
+    XPSemiModalConfiguration *config = [XPSemiModalConfiguration defaultConfiguration];
+    [self presentSemiModalViewController:chooseGoodsAttributeVC contentHeight:SCREEN_HEIGHT - 200 configuration:config completion:nil];
 }
 #pragma mark - 网络请求
 /**

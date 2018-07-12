@@ -1,0 +1,210 @@
+{
+    "status": 200,
+    "message": "获取成功",
+    "data": {
+        "spec": [
+                 {
+                 "key": "颜色",
+                 "value": [
+                           "01",
+                           "02",
+                           "03",
+                           "04",
+                           "05",
+                           "06",
+                           "07",
+                           "08",
+                           "09"
+                           ]
+                 },
+                 {
+                 "key": "尺码",
+                 "value": [
+                           "200*230cm"
+                           ]
+                 }
+                 ],
+        "list": [
+                 {
+                 "spec_id": 5159,
+                 "product_id": 405,
+                 "spec_1": "01",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "01,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "01"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 5160,
+                 "product_id": 405,
+                 "spec_1": "02",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "02,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "02"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 5161,
+                 "product_id": 405,
+                 "spec_1": "03",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "03,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "03"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 5162,
+                 "product_id": 405,
+                 "spec_1": "04",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "04,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "04"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 5163,
+                 "product_id": 405,
+                 "spec_1": "05",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "05,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "05"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 5164,
+                 "product_id": 405,
+                 "spec_1": "06",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "06,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "06"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 5165,
+                 "product_id": 405,
+                 "spec_1": "07",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "07,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "07"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 5166,
+                 "product_id": 405,
+                 "spec_1": "08",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "08,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "08"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 },
+                 {
+                 "spec_id": 5167,
+                 "product_id": 405,
+                 "spec_1": "09",
+                 "spec_2": "200*230cm",
+                 "price": "320.00",
+                 "stock": 500,
+                 "img": "/homebank/goods_images/2018-06/152785527347647935.jpg",
+                 "spec": "09,200*230cm",
+                 "info": [
+                          {
+                          "tabName": "颜色",
+                          "tabValue": "09"
+                          },
+                          {
+                          "tabName": "尺码",
+                          "tabValue": "200*230cm"
+                          }
+                          ]
+                 }
+                 ]
+    }
+}

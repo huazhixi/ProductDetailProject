@@ -90,7 +90,6 @@ static NSString *const TCGoodsCellID = @"TCGoodsCell";
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    RecommendProduct *model = _recommendArray[indexPath.row];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"moreProductDetail" ofType:@"json"];
     NSString *productlistStr = [NSString stringWithContentsOfFile:path usedEncoding:nil error:nil];
@@ -99,6 +98,7 @@ static NSString *const TCGoodsCellID = @"TCGoodsCell";
     
     TCBabyDeailtyRootVC *babyDetailVC = [TCBabyDeailtyRootVC new];
     babyDetailVC.goodsModel = goodsModel;
+    babyDetailVC.goodsID = @"405";
     [CurrentViewController.navigationController pushViewController:babyDetailVC animated:YES];
 }
 

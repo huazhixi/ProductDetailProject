@@ -8,11 +8,14 @@
 
 #import "TCChooseGoodsAttributeViewController.h"
 #import "Masonry.h"
+#import "02 Macro.h"
 #import "03 Constant.h"
+#import "EasyTextView.h"
+#import "MJExtension.h"
 #import "UIImageView+WebCache.h"
-#import "PurchaseCarAnimationTool.h"
-#import "BaseTabBarController.h"
 #import "NSString+HXExtension.h"
+#import "PurchaseCarAnimationTool.h"
+//#import "BaseTabBarController.h"
 
 #import "TCPropertyCell.h"
 #import "TCPropertyHeader.h"
@@ -21,7 +24,7 @@
 #import "ORSKUDataFilter.h"
 
 #import "TCAttributeModel.h"
-#import "TCFinalOrderViewController.h"
+//#import "TCFinalOrderViewController.h"
 
 static NSString *const TCPropertyCellID = @"TCPropertyCell";
 static NSString *const TCPropertyHeaderID = @"TCPropertyHeader";
@@ -64,7 +67,7 @@ static NSString *const TCCountFooterViewID = @"TCCountFooterView";
 /**  已选商品属性模型   */
 @property (strong, nonatomic) Attribute *choosedAttribute;
 /**  立即购买返回的订单模型   */
-@property (strong, nonatomic) TCConfirmOrderModel *confirmOrderModel;
+//@property (strong, nonatomic) TCConfirmOrderModel *confirmOrderModel;
 /** 选择提示语  */
 @property (nonatomic, copy) NSString *noteSpec;
 @end
@@ -129,7 +132,38 @@ static NSString *const TCCountFooterViewID = @"TCCountFooterView";
  刷新页面视图
  */
 - (void)fetchGoodsAttributesData {
+    NSDictionary *productlistDic = [NSDictionary new];
     
+    if ([_goods_id isEqual:@"402"]) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"productSpec1" ofType:@"json"];
+        NSString *productlistStr = [NSString stringWithContentsOfFile:path usedEncoding:nil error:nil];
+        productlistDic = [productlistStr mj_JSONObject];
+    } else {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"productSpec2" ofType:@"json"];
+        NSString *productlistStr = [NSString stringWithContentsOfFile:path usedEncoding:nil error:nil];
+        productlistDic = [productlistStr mj_JSONObject];
+    }
+    
+    self.attrModel = [TCAttributeModel mj_objectWithKeyValues:productlistDic[@"data"]];
+    self.dataSource = productlistDic[@"data"][@"spec"];
+    
+    NSMutableArray *noteSpecArr = @[].mutableCopy;
+    for (NSDictionary *dic in self.dataSource) {// 组合选择提示语
+        [noteSpecArr addObject:dic[@"key"]];
+    }
+    self.noteSpec = [noteSpecArr componentsJoinedByString:@" "];
+    
+    NSMutableArray *skuArray = @[].mutableCopy;
+    for (Attribute *model in self.attrModel.list) {
+        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:1];
+        dic[@"contition"] = model.spec;
+        dic[@"price"] = [NSString stringWithFormat:@"%.2f", model.price];
+        dic[@"store"] = model.stock;
+        dic[@"model"] = model;
+        [skuArray addObject:dic];
+    }
+    self.skuData = skuArray;
+    [self refreshAttributesView];
 }
 /**
  加入购物车
@@ -262,17 +296,17 @@ static NSString *const TCCountFooterViewID = @"TCCountFooterView";
     
     [_lb_price mas_makeConstraints:^(MASConstraintMaker *make){
         make.top.equalTo(self.view.mas_top).offset(Padding);
-        make.left.equalTo(_goodImageView.mas_right).offset(Padding);
+        make.left.equalTo(self.goodImageView.mas_right).offset(Padding);
     }];
     
     [_lb_stock mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(_lb_price.mas_bottom).offset(5);
-        make.left.equalTo(_lb_price).offset(0);
+        make.top.equalTo(self.lb_price.mas_bottom).offset(5);
+        make.left.equalTo(self.lb_price).offset(0);
     }];
     
     [_lb_detail mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(_lb_stock.mas_bottom).offset(5);
-        make.left.equalTo(_lb_price).offset(0);
+        make.top.equalTo(self.lb_stock.mas_bottom).offset(5);
+        make.left.equalTo(self.lb_price).offset(0);
     }];
     
     [_closeBtn mas_makeConstraints:^(MASConstraintMaker *make){
@@ -282,21 +316,21 @@ static NSString *const TCCountFooterViewID = @"TCCountFooterView";
     }];
 
     [_line mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(_goodImageView.mas_bottom).offset(BigPadding);
+        make.top.equalTo(self.goodImageView.mas_bottom).offset(BigPadding);
         make.left.equalTo(self.view).offset(Padding);
         make.right.equalTo(self.view.mas_right).offset(-Padding);
         make.height.offset(1);
     }];
     
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.equalTo(_line.mas_bottom).offset(0);
+        make.top.equalTo(self.line.mas_bottom).offset(0);
         make.left.right.equalTo(self.view).offset(0);
-        make.bottom.equalTo(_addCartBtn.mas_top).offset(0);
+        make.bottom.equalTo(self.addCartBtn.mas_top).offset(0);
     }];
 
     [_addCartBtn mas_makeConstraints:^(MASConstraintMaker *make){
         make.left.equalTo(self.view).offset(0);
-        make.right.equalTo(_buyGoodsBtn.mas_left).offset(0);
+        make.right.equalTo(self.buyGoodsBtn.mas_left).offset(0);
         make.bottom.equalTo(self.view.mas_bottom).offset(-kTabbarSafeBottomMargin);
         make.height.offset(44);
 //        make.width.offset(SCREEN_WIDTH / 2);
@@ -304,14 +338,14 @@ static NSString *const TCCountFooterViewID = @"TCCountFooterView";
     if (_fromBuyNowBtn) {
         [_buyGoodsBtn mas_makeConstraints:^(MASConstraintMaker *make){
             make.right.equalTo(self.view.mas_right).offset(0);
-            make.bottom.equalTo(_addCartBtn.mas_bottom).offset(0);
+            make.bottom.equalTo(self.addCartBtn.mas_bottom).offset(0);
             make.height.offset(44);
             make.width.offset(SCREEN_WIDTH);
         }];
     } else {
         [_buyGoodsBtn mas_makeConstraints:^(MASConstraintMaker *make){
             make.right.equalTo(self.view.mas_right).offset(0);
-            make.bottom.equalTo(_addCartBtn.mas_bottom).offset(0);
+            make.bottom.equalTo(self.addCartBtn.mas_bottom).offset(0);
             make.height.offset(44);
             make.width.offset(SCREEN_WIDTH / 2);
         }];
@@ -518,9 +552,9 @@ static NSString *const TCCountFooterViewID = @"TCCountFooterView";
     __weak typeof(self) _weakSelf = self;
     [[PurchaseCarAnimationTool shareTool] startAnimationandView:_goodImageView andRect:CGRectMake(0, 208, 100, 100) andFinisnRect:CGPointMake(ScreenWidth/4*2.5, ScreenHeight-49) andFinishBlock:^(BOOL finisn){
         [_weakSelf dismissViewBtnClick];
-        BaseTabBarController *tab = (BaseTabBarController *)KeyWindow.rootViewController;
-        UIView *tabbarBtn = tab.tabBar.subviews[2];
-        [PurchaseCarAnimationTool shakeAnimation:tabbarBtn];
+//        BaseTabBarController *tab = (BaseTabBarController *)KeyWindow.rootViewController;
+//        UIView *tabbarBtn = tab.tabBar.subviews[2];
+//        [PurchaseCarAnimationTool shakeAnimation:tabbarBtn];
     }];
 }
 /**
@@ -544,21 +578,21 @@ static NSString *const TCCountFooterViewID = @"TCCountFooterView";
     __weak typeof(self) _weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        TCFinalOrderViewController *finalOrderVC = [TCFinalOrderViewController new];
-        finalOrderVC.confirmOrderModel = _weakSelf.confirmOrderModel;
-        finalOrderVC.isBuyNow = YES;
-        if (_store_id == 72) {//天元商品购买
-            if ([_goods_id isEqual:@"1297"]) {
-                finalOrderVC.confirmOrderType = ConfirmOrderTypeSpecialGoods_1297;
-            } else {
-                finalOrderVC.confirmOrderType = ConfirmOrderTypeTianYuan;
-            }
-        } else if (_store_id == 73) {//天堂商品购买
-            finalOrderVC.confirmOrderType = ConfirmOrderTypeHeaven;
-        } else {
-            finalOrderVC.confirmOrderType = ConfirmOrderTypeNormal;
-        }
-        [_weakSelf.fatherVC.navigationController pushViewController:finalOrderVC animated:YES];
+//        TCFinalOrderViewController *finalOrderVC = [TCFinalOrderViewController new];
+//        finalOrderVC.confirmOrderModel = _weakSelf.confirmOrderModel;
+//        finalOrderVC.isBuyNow = YES;
+//        if (_store_id == 72) {//天元商品购买
+//            if ([_goods_id isEqual:@"1297"]) {
+//                finalOrderVC.confirmOrderType = ConfirmOrderTypeSpecialGoods_1297;
+//            } else {
+//                finalOrderVC.confirmOrderType = ConfirmOrderTypeTianYuan;
+//            }
+//        } else if (_store_id == 73) {//天堂商品购买
+//            finalOrderVC.confirmOrderType = ConfirmOrderTypeHeaven;
+//        } else {
+//            finalOrderVC.confirmOrderType = ConfirmOrderTypeNormal;
+//        }
+//        [_weakSelf.fatherVC.navigationController pushViewController:finalOrderVC animated:YES];
     });
 }
 - (void)dismissViewBtnClick {

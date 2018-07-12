@@ -27,5 +27,7 @@
 @property (strong, nonatomic) TCGoodsModel *goodsModel;
 /**   */
 @property (nonatomic, copy) NSString *goods_img;
+/**   */
+@property (nonatomic, copy) NSString *goods_id;
 
 @end

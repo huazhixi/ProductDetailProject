@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TCConfirmOrderModel.h"
+//#import "TCConfirmOrderModel.h"
 #import "TCGoodsModel.h"
 
 @interface TCChooseGoodsAttributeViewController : UIViewController

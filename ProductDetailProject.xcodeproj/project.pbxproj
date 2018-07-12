@@ -66,6 +66,16 @@
 		EC5860D920F707BF001ADE5B /* NSObject+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860D820F707BF001ADE5B /* NSObject+HXExtension.m */; };
 		EC5860DB20F72C87001ADE5B /* productDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5860DA20F72C87001ADE5B /* productDetail.json */; };
 		EC5860DD20F73471001ADE5B /* moreProductDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5860DC20F73471001ADE5B /* moreProductDetail.json */; };
+		EC5860EF20F736AF001ADE5B /* ORSKUDataFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860E020F736AE001ADE5B /* ORSKUDataFilter.m */; };
+		EC5860F020F736AF001ADE5B /* TCChooseGoodsAttributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860E120F736AE001ADE5B /* TCChooseGoodsAttributeViewController.m */; };
+		EC5860F120F736AF001ADE5B /* TCAttributeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860E220F736AE001ADE5B /* TCAttributeModel.m */; };
+		EC5860F220F736AF001ADE5B /* TCPropertyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860E920F736AE001ADE5B /* TCPropertyCell.m */; };
+		EC5860F320F736AF001ADE5B /* TCPropertyFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860EA20F736AE001ADE5B /* TCPropertyFooter.m */; };
+		EC5860F420F736AF001ADE5B /* TCPropertyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860EB20F736AE001ADE5B /* TCPropertyHeader.m */; };
+		EC5860F520F736AF001ADE5B /* TCCountFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860EC20F736AE001ADE5B /* TCCountFooterView.m */; };
+		EC5860F820F737ED001ADE5B /* NSString+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860F720F737ED001ADE5B /* NSString+HXExtension.m */; };
+		EC5860FA20F738FC001ADE5B /* productSpec1.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5860F920F738FC001ADE5B /* productSpec1.json */; };
+		EC5860FE20F7397A001ADE5B /* productSpec2.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5860FD20F7397A001ADE5B /* productSpec2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +184,24 @@
 		EC5860D820F707BF001ADE5B /* NSObject+HXExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HXExtension.m"; sourceTree = "<group>"; };
 		EC5860DA20F72C87001ADE5B /* productDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productDetail.json; sourceTree = "<group>"; };
 		EC5860DC20F73471001ADE5B /* moreProductDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = moreProductDetail.json; sourceTree = "<group>"; };
+		EC5860E020F736AE001ADE5B /* ORSKUDataFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORSKUDataFilter.m; sourceTree = "<group>"; };
+		EC5860E120F736AE001ADE5B /* TCChooseGoodsAttributeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCChooseGoodsAttributeViewController.m; sourceTree = "<group>"; };
+		EC5860E220F736AE001ADE5B /* TCAttributeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAttributeModel.m; sourceTree = "<group>"; };
+		EC5860E320F736AE001ADE5B /* ORSKUDataFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORSKUDataFilter.h; sourceTree = "<group>"; };
+		EC5860E520F736AE001ADE5B /* TCCountFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCountFooterView.h; sourceTree = "<group>"; };
+		EC5860E620F736AE001ADE5B /* TCPropertyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPropertyHeader.h; sourceTree = "<group>"; };
+		EC5860E720F736AE001ADE5B /* TCPropertyFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPropertyFooter.h; sourceTree = "<group>"; };
+		EC5860E820F736AE001ADE5B /* TCPropertyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPropertyCell.h; sourceTree = "<group>"; };
+		EC5860E920F736AE001ADE5B /* TCPropertyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPropertyCell.m; sourceTree = "<group>"; };
+		EC5860EA20F736AE001ADE5B /* TCPropertyFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPropertyFooter.m; sourceTree = "<group>"; };
+		EC5860EB20F736AE001ADE5B /* TCPropertyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPropertyHeader.m; sourceTree = "<group>"; };
+		EC5860EC20F736AE001ADE5B /* TCCountFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCountFooterView.m; sourceTree = "<group>"; };
+		EC5860ED20F736AE001ADE5B /* TCAttributeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAttributeModel.h; sourceTree = "<group>"; };
+		EC5860EE20F736AE001ADE5B /* TCChooseGoodsAttributeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCChooseGoodsAttributeViewController.h; sourceTree = "<group>"; };
+		EC5860F620F737ED001ADE5B /* NSString+HXExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+HXExtension.h"; sourceTree = "<group>"; };
+		EC5860F720F737ED001ADE5B /* NSString+HXExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+HXExtension.m"; sourceTree = "<group>"; };
+		EC5860F920F738FC001ADE5B /* productSpec1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productSpec1.json; sourceTree = "<group>"; };
+		EC5860FD20F7397A001ADE5B /* productSpec2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productSpec2.json; sourceTree = "<group>"; };
 		F3C2430FA121927D529B7A50 /* Pods-ProductDetailProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductDetailProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProductDetailProject/Pods-ProductDetailProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +254,7 @@
 				EC58602F20F6F284001ADE5B /* TCGoodsCell.h */,
 				EC58603020F6F285001ADE5B /* TCGoodsCell.m */,
 				EC58604820F6FFDD001ADE5B /* ProductDetail(宝贝详情) */,
+				EC5860DE20F736AE001ADE5B /* ChooseAttr(选择商品属性) */,
 				EC58603220F6F293001ADE5B /* Model(商品详情) */,
 				EC5860A720F70210001ADE5B /* BaseVC */,
 				EC58603F20F6F9D0001ADE5B /* Common(通用) */,
@@ -271,6 +300,8 @@
 				EC58604620F6FD13001ADE5B /* productlist.json */,
 				EC5860DA20F72C87001ADE5B /* productDetail.json */,
 				EC5860DC20F73471001ADE5B /* moreProductDetail.json */,
+				EC5860F920F738FC001ADE5B /* productSpec1.json */,
+				EC5860FD20F7397A001ADE5B /* productSpec2.json */,
 			);
 			path = "Resource(json数据)";
 			sourceTree = "<group>";
@@ -400,6 +431,8 @@
 				EC5860B520F705A1001ADE5B /* UIViewController+Utils.m */,
 				EC5860D720F707BF001ADE5B /* NSObject+HXExtension.h */,
 				EC5860D820F707BF001ADE5B /* NSObject+HXExtension.m */,
+				EC5860F620F737ED001ADE5B /* NSString+HXExtension.h */,
+				EC5860F720F737ED001ADE5B /* NSString+HXExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -459,6 +492,43 @@
 				EC5860D120F70756001ADE5B /* XPSemiModalTransitioningDelegate.m */,
 			);
 			path = SemiModal;
+			sourceTree = "<group>";
+		};
+		EC5860DE20F736AE001ADE5B /* ChooseAttr(选择商品属性) */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860DF20F736AE001ADE5B /* Controller */,
+			);
+			path = "ChooseAttr(选择商品属性)";
+			sourceTree = "<group>";
+		};
+		EC5860DF20F736AE001ADE5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860EE20F736AE001ADE5B /* TCChooseGoodsAttributeViewController.h */,
+				EC5860E120F736AE001ADE5B /* TCChooseGoodsAttributeViewController.m */,
+				EC5860E320F736AE001ADE5B /* ORSKUDataFilter.h */,
+				EC5860E020F736AE001ADE5B /* ORSKUDataFilter.m */,
+				EC5860ED20F736AE001ADE5B /* TCAttributeModel.h */,
+				EC5860E220F736AE001ADE5B /* TCAttributeModel.m */,
+				EC5860E420F736AE001ADE5B /* View */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC5860E420F736AE001ADE5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860E520F736AE001ADE5B /* TCCountFooterView.h */,
+				EC5860E620F736AE001ADE5B /* TCPropertyHeader.h */,
+				EC5860E720F736AE001ADE5B /* TCPropertyFooter.h */,
+				EC5860E820F736AE001ADE5B /* TCPropertyCell.h */,
+				EC5860E920F736AE001ADE5B /* TCPropertyCell.m */,
+				EC5860EA20F736AE001ADE5B /* TCPropertyFooter.m */,
+				EC5860EB20F736AE001ADE5B /* TCPropertyHeader.m */,
+				EC5860EC20F736AE001ADE5B /* TCCountFooterView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F67E29584491B70A1CC99D2A /* Frameworks */ = {
@@ -542,7 +612,9 @@
 				EC58609D20F6FFDD001ADE5B /* TCBabyDetailFooterView.xib in Resources */,
 				EC270B5120F5F00900AAF959 /* Main.storyboard in Resources */,
 				EC58609120F6FFDD001ADE5B /* TCSaleServiceCell.xib in Resources */,
+				EC5860FE20F7397A001ADE5B /* productSpec2.json in Resources */,
 				EC5860A220F6FFDE001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.xib in Resources */,
+				EC5860FA20F738FC001ADE5B /* productSpec1.json in Resources */,
 				EC58609620F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.xib in Resources */,
 				EC5860DB20F72C87001ADE5B /* productDetail.json in Resources */,
 				EC58608F20F6FFDD001ADE5B /* TCBabyDeailtyCell.xib in Resources */,
@@ -646,6 +718,7 @@
 				EC58609920F6FFDD001ADE5B /* TCCycleScrollTableViewCell.m in Sources */,
 				EC5860B620F705A1001ADE5B /* UIViewController+Utils.m in Sources */,
 				EC58608A20F6FFDD001ADE5B /* TCBabyDeailtyViewController.m in Sources */,
+				EC5860EF20F736AF001ADE5B /* ORSKUDataFilter.m in Sources */,
 				EC5860A120F6FFDE001ADE5B /* TCRecommandTableViewCell.m in Sources */,
 				EC58609C20F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.m in Sources */,
 				EC5860B020F70289001ADE5B /* HRBarItem.m in Sources */,
@@ -654,10 +727,13 @@
 				EC58608920F6FFDD001ADE5B /* TCBabyDeailtyComentVC.m in Sources */,
 				EC5860D620F70756001ADE5B /* XPSemiModalTransitioningDelegate.m in Sources */,
 				EC270B6420F60CA000AAF959 /* ProductListViewController.m in Sources */,
+				EC5860F120F736AF001ADE5B /* TCAttributeModel.m in Sources */,
 				EC58603B20F6F294001ADE5B /* TCCommentModel.m in Sources */,
 				EC58609F20F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.m in Sources */,
 				EC58603E20F6F314001ADE5B /* TCHomeModel.m in Sources */,
 				EC58609220F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.m in Sources */,
+				EC5860F220F736AF001ADE5B /* TCPropertyCell.m in Sources */,
+				EC5860F020F736AF001ADE5B /* TCChooseGoodsAttributeViewController.m in Sources */,
 				EC58603920F6F294001ADE5B /* TCGoodsModel.m in Sources */,
 				EC5860C420F7066D001ADE5B /* LLSegmentBarConfig.m in Sources */,
 				EC58609E20F6FFDD001ADE5B /* TCSaleServiceCell.m in Sources */,
@@ -668,17 +744,21 @@
 				EC5860AD20F70249001ADE5B /* BaseViewController.m in Sources */,
 				EC5860D320F70756001ADE5B /* UIViewController+XPSemiModal.m in Sources */,
 				EC5860D920F707BF001ADE5B /* NSObject+HXExtension.m in Sources */,
+				EC5860F320F736AF001ADE5B /* TCPropertyFooter.m in Sources */,
 				EC5860AC20F70249001ADE5B /* HRBaseViewController.m in Sources */,
 				EC58608820F6FFDD001ADE5B /* TCBabyDeailtyWebVC.m in Sources */,
 				EC58603120F6F285001ADE5B /* TCGoodsCell.m in Sources */,
 				EC58609B20F6FFDD001ADE5B /* TCBabyDetailFooterView.m in Sources */,
 				EC5860D420F70756001ADE5B /* XPSemiModalAnimatedTransitioning.m in Sources */,
+				EC5860F820F737ED001ADE5B /* NSString+HXExtension.m in Sources */,
 				EC5860A320F6FFDE001ADE5B /* TCGoodsParameterView.m in Sources */,
 				EC58608B20F6FFDD001ADE5B /* TCGoodsCommentListsCell.m in Sources */,
 				EC58609720F6FFDD001ADE5B /* TCRecommandTopTableViewCell.m in Sources */,
 				EC5860C520F7066D001ADE5B /* LLSegmentBar.m in Sources */,
+				EC5860F520F736AF001ADE5B /* TCCountFooterView.m in Sources */,
 				EC58608520F6FFDD001ADE5B /* PurchaseCarAnimationTool.m in Sources */,
 				EC58608620F6FFDD001ADE5B /* TCBabyDeailtyCommentListVC.m in Sources */,
+				EC5860F420F736AF001ADE5B /* TCPropertyHeader.m in Sources */,
 				EC270B4B20F5F00900AAF959 /* AppDelegate.m in Sources */,
 				EC5860A020F6FFDE001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.m in Sources */,
 				EC5860C320F7066D001ADE5B /* UIView+LLSegmentBar.m in Sources */,
