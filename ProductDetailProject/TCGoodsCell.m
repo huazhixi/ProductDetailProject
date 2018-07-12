@@ -8,11 +8,9 @@
 
 #import "TCGoodsCell.h"
 #import "Masonry.h"
+#import "02 Macro.h"
 #import <YYText/YYText.h>
 #import "UIImageView+WebCache.h"
-
-//包括协议、地址、端口号...。含“/”，如果 URL_IMG_PREFIX 为空，则不含。
-static NSString *const URL_IMG_PREFIX = @"http://tp.homebank.shop";
 
 @interface TCGoodsCell()
 /* 图片 */

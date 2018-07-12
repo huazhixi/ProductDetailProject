@@ -1,5 +1,8 @@
 
 #import "TCBabyDeailtyShopBasicInfoTableViewCell.h"
+#import "03 Constant.h"
+#import "02 Macro.h"
+#import "UIImageView+WebCache.h"
 
 NSString *const kMerchandiseShopBasicInfoTableViewCellIdentifier = @"MerchandiseShopBasicInfoTableViewCell";
 

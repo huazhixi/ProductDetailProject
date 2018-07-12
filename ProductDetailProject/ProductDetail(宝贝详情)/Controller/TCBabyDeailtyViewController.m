@@ -3,11 +3,15 @@
  */
 
 #import "TCBabyDeailtyViewController.h"
-#import "UIColor+hex.h"
-#import "BRPickerView.h"
 #import "UIViewController+XPSemiModal.h"
-#import "UIImage+ColorCreateImage.h"
 #import "NSObject+HXExtension.h"
+#import "03 Constant.h"
+#import "02 Macro.h"
+#import "Masonry.h"
+#import "YYText.h"
+#import "MJRefresh.h"
+#import "MJExtension.h"
+#import "UITableView+FDTemplateLayoutCell.h"
 
 #import "TCCycleScrollTableViewCell.h"
 #import "TCGoodsInfoTableViewCell.h"
@@ -23,13 +27,13 @@
 
 #import "TCBabyDeailtyBottomToolsView.h"
 #import "TCGoodsParameterView.h"
-#import "TCBabyDeailtyCouponView.h"
-#import "TCChooseGoodsAttributeViewController.h"
-#import "TCShopHomeViewController.h"
-#import "TCShopGoodsCategeryViewController.h"
-#import "TCShopCartViewController.h"
-#import "TCUserLoginViewController.h"
-#import "TCGoodsAddressModel.h"
+//#import "TCBabyDeailtyCouponView.h"
+//#import "TCChooseGoodsAttributeViewController.h"
+//#import "TCShopHomeViewController.h"
+//#import "TCShopGoodsCategeryViewController.h"
+//#import "TCShopCartViewController.h"
+//#import "TCUserLoginViewController.h"
+//#import "TCGoodsAddressModel.h"
 
 #define kEndH 80 //用户手指上拉多少距离进入宝贝详情
 #define NAVBAR_COLORCHANGE_POINT -500
@@ -67,7 +71,7 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
 /**  底部工具栏   */
 @property (strong, nonatomic) TCBabyDeailtyBottomToolsView *bottomToolsView;
 /**     */
-@property (strong, nonatomic)  TCBabyDeailtyCouponView *couponView;
+//@property (strong, nonatomic)  TCBabyDeailtyCouponView *couponView;
 /**     */
 @property (strong, nonatomic) NSMutableArray *addressDataSource;
 /**     */
@@ -141,32 +145,32 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
         } else if (tag ==1) {// 进入店铺首页
             [_weakSelf enterShopHomeView];
         } else {//进入购物车页面
-            if (!User_ID) {
-                [self presentLoginVC];
-                return;
-            }
-            TCShopCartViewController *shopCartVC = [TCShopCartViewController new];
-            [self.navigationController pushViewController:shopCartVC animated:YES];
+//            if (!User_ID) {
+//                [self presentLoginVC];
+//                return;
+//            }
+//            TCShopCartViewController *shopCartVC = [TCShopCartViewController new];
+//            [self.navigationController pushViewController:shopCartVC animated:YES];
         }
     };
 }
 
 - (void)goodsAttributeChooseIsFromBuyNowBtn:(BOOL)isFromBuyNow {
-    if (!User_ID) {
-        [self presentLoginVC];
-        return;
-    }
+//    if (!User_ID) {
+//        [self presentLoginVC];
+//        return;
+//    }
     
-    TCChooseGoodsAttributeViewController *chooseGoodsAttributeVC = [TCChooseGoodsAttributeViewController new];
-    chooseGoodsAttributeVC.isFromBuyCart = NO;
-    chooseGoodsAttributeVC.fromBuyNowBtn = isFromBuyNow;
-    chooseGoodsAttributeVC.fatherVC = self;
-    chooseGoodsAttributeVC.goods_id = s_Integer(_goodsModel.goodsInfo.goods_id);
-    chooseGoodsAttributeVC.goodsModel = _goodsModel;
-    chooseGoodsAttributeVC.goods_img = _goods_img;
-    chooseGoodsAttributeVC.store_id = self.goodsModel.storeInfo.store_id;
-    XPSemiModalConfiguration *config = [XPSemiModalConfiguration defaultConfiguration];
-    [self presentSemiModalViewController:chooseGoodsAttributeVC contentHeight:SCREEN_HEIGHT - 200 configuration:config completion:nil];
+//    TCChooseGoodsAttributeViewController *chooseGoodsAttributeVC = [TCChooseGoodsAttributeViewController new];
+//    chooseGoodsAttributeVC.isFromBuyCart = NO;
+//    chooseGoodsAttributeVC.fromBuyNowBtn = isFromBuyNow;
+//    chooseGoodsAttributeVC.fatherVC = self;
+//    chooseGoodsAttributeVC.goods_id = s_Integer(_goodsModel.goodsInfo.goods_id);
+//    chooseGoodsAttributeVC.goodsModel = _goodsModel;
+//    chooseGoodsAttributeVC.goods_img = _goods_img;
+//    chooseGoodsAttributeVC.store_id = self.goodsModel.storeInfo.store_id;
+//    XPSemiModalConfiguration *config = [XPSemiModalConfiguration defaultConfiguration];
+//    [self presentSemiModalViewController:chooseGoodsAttributeVC contentHeight:SCREEN_HEIGHT - 200 configuration:config completion:nil];
 }
 #pragma mark - 网络请求
 /**
@@ -174,101 +178,24 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
  */
 - (void)fetchAreaListData {
     
-    typeof(self) _weakSelf = self;
-    [EasyLoadingView showLoading];
-    [[HRRequest manager] POST:@"Area/index" para:nil success:^(id data) {
-        [EasyLoadingView hidenLoading];
-        NSLog(@"%@", data);
-//        _weakSelf.addressDataSource = data[@"data"];
-        NSArray *tempArray = [TCGoodsAddressModel mj_objectArrayWithKeyValuesArray:data[@"data"]];
-        for (TCGoodsAddressModel *model in tempArray) {
-            NSMutableDictionary *provinceDic = [NSMutableDictionary dictionaryWithCapacity:1];
-            provinceDic[@"code"] = model.code;
-            provinceDic[@"name"] = model.name;
-            NSMutableArray *cityArray = @[].mutableCopy;
-            if (model.citylist) {
-                for (TCGoodsCityList *city in model.citylist) {
-                    NSMutableDictionary *cityDic = [NSMutableDictionary dictionaryWithCapacity:1];
-                    cityDic[@"code"] = city.code;
-                    cityDic[@"name"] = city.name;
-                    [cityArray addObject:cityDic];
-                }
-            }
-            provinceDic[@"citylist"] = cityArray;
-            [_weakSelf.addressDataSource addObject:provinceDic];
-        }
-    } faiulre:^(NSString *errMsg) {
-        [EasyLoadingView hidenLoading];
-        if ([errMsg isEqual:ERROR_MESSAGE] || [errMsg isEqual:NET_NOT_WORK]) {
-            [EasyTextView showErrorText:errMsg];
-        } else {
-            [EasyTextView showInfoText:errMsg];
-        }
-    }];
 }
 /**
  商品详情计算运费
  */
 - (void)getGoodsInfoFeeWithCity_id:(NSString *)city_id {
-    
-    typeof(self) _weakSelf = self;
-    [EasyLoadingView showLoading];
-    
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"goods_id"] = s_Integer(_goodsModel.goodsInfo.goods_id);
-    params[@"city_id"] = city_id;
-    
-    [[HRRequest manager] POST:@"FreightFee/getGoodsInfoFee" para:params success:^(id data) {
-        [EasyLoadingView hidenLoading];
-        NSLog(@"%@", data);
-        Position *position = [Position mj_objectWithKeyValues:data[@"data"]];
-        TCGoodsInfoTableViewCell *goodsInfoCell = [_weakSelf.contentTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:1]];
-        goodsInfoCell.position = position;
-    } faiulre:^(NSString *errMsg) {
-        [EasyLoadingView hidenLoading];
-        if ([errMsg isEqual:ERROR_MESSAGE] || [errMsg isEqual:NET_NOT_WORK]) {
-            [EasyTextView showErrorText:errMsg];
-        } else {
-            [EasyTextView showInfoText:errMsg];
-        }
-    }];
+
 }
 /**
  商品收藏
  */
 - (void)goodsCollectMethod {
     
-    typeof(self) _weakSelf = self;
-    [EasyLoadingView showLoading];
-    
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"type"] = @"goods";
-    params[@"item_id"] = s_Integer(_goodsModel.goodsInfo.goods_id);
-    
-    [[HRRequest manager] POST:@"Collect/index" para:params success:^(id data) {
-        [EasyLoadingView hidenLoading];
-        NSLog(@"%@", data);
-        NSString *message = s_str(data[@"message"]);
-        [EasyTextView showSuccessText:message];
-//        TCGoodsInfoTableViewCell *cell = [_weakSelf.contentTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:1];
-        dic[@"message"] = message;
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"ChangeCollectionImgView" object:dic];
-        
-    } faiulre:^(NSString *errMsg) {
-        [EasyLoadingView hidenLoading];
-        if ([errMsg isEqual:ERROR_MESSAGE] || [errMsg isEqual:NET_NOT_WORK]) {
-            [EasyTextView showErrorText:errMsg];
-        } else {
-            [EasyTextView showInfoText:errMsg];
-        }
-    }];
 }
 - (void)enterShopHomeView {
 //    [EasyTextView showText:@"功能暂未开通"];
-    TCShopHomeViewController *shopHomeVC = [TCShopHomeViewController new];
-    shopHomeVC.store_id  = s_Integer(_goodsModel.storeInfo.store_id);
-    [self.baseNavController pushViewController:shopHomeVC animated:YES];
+//    TCShopHomeViewController *shopHomeVC = [TCShopHomeViewController new];
+//    shopHomeVC.store_id  = s_Integer(_goodsModel.storeInfo.store_id);
+//    [self.navigationController pushViewController:shopHomeVC animated:YES];
 }
 #pragma mark - UITableViewDelegate  DataSouce
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -328,8 +255,8 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
     shopInfoCell.shopInfoCellBlock = ^(NSInteger index) {
         if (index == 0) {// 商品分类
             
-            TCShopGoodsCategeryViewController *shopGoodsCategeryVC = [TCShopGoodsCategeryViewController new];
-            [_weakSelf.navigationController pushViewController:shopGoodsCategeryVC animated:YES];
+//            TCShopGoodsCategeryViewController *shopGoodsCategeryVC = [TCShopGoodsCategeryViewController new];
+//            [_weakSelf.navigationController pushViewController:shopGoodsCategeryVC animated:YES];
         } else {// 店铺首页
             
             [_weakSelf enterShopHomeView];
@@ -360,19 +287,16 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
             [_weakSelf goodsAttributeChooseIsFromBuyNowBtn:NO];
         };
         cell.babyDealtyCellGoodsParamBlock = ^{// 产品参数
-            [UIView animateWithDuration:0.3 animations:^{
-                _weakSelf.paramView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-                [KeyWindow addSubview:self.paramView];
-            }];
+            
         };
         
         cell.babyDealtyCellYouhuiBlock = ^{// 优惠券
-            self.couponView.store_id = s_Integer(_goodsModel.goodsInfo.store_id);
-            [UIView animateWithDuration:0.3 animations:^{
-                [KeyWindow addSubview:self.couponView];
-                _weakSelf.couponView.alpha = 1;
-                _weakSelf.couponView.downViewConstraint.constant = 200;
-            }];
+//            self.couponView.store_id = s_Integer(_goodsModel.goodsInfo.store_id);
+//            [UIView animateWithDuration:0.3 animations:^{
+//                [KeyWindow addSubview:self.couponView];
+//                _weakSelf.couponView.alpha = 1;
+//                _weakSelf.couponView.downViewConstraint.constant = 200;
+//            }];
         };
        return cell;
     } else if (indexPath.section == 3) {
@@ -522,7 +446,6 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
         
         // 滚到底部视图
         if (maxY >= self.contentTableView.contentSize.height - SCREEN_HEIGHT + kEndH) {
-//            self.segmentBar.hidden = YES;
             [UIView animateWithDuration:0.5 animations:^{
                 self.segmentBar.mj_y = -kStatusBarAndNavigationBarHeight;
                 self.titileLbl.mj_y = 0;
@@ -538,7 +461,6 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
         }
         // 滚到中间视图
         if (minY <= -kEndH && _isShowBottom) {
-//            self.segmentBar.hidden = NO;
             [UIView animateWithDuration:0.5 animations:^{
                 self.segmentBar.mj_y = 0;
                 self.titileLbl.mj_y = 35;
@@ -555,37 +477,30 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
 }
 #pragma mark - TCGoodsInfoTableViewCellDelegate
 - (void)goodsInfoCellChooseAddressWithIndex:(NSIndexPath *)indexPath {
-    __weak typeof(self) _weakSelf = self;
-    TCGoodsInfoTableViewCell *cell = (TCGoodsInfoTableViewCell *)[_contentTableView cellForRowAtIndexPath:indexPath];
-    NSArray *dataSource = self.addressDataSource; // dataSource 为空时，就默认使用框架内部提供的数据源（即 BRCity.plist）
-//    [BRAddressPickerView showAddressPickerWithShowType:BRAddressPickerModeCity defaultSelected:dataSource isAutoSelect:NO themeColor:nil resultBlock:^(BRProvinceModel *province, BRCityModel *city, BRAreaModel *area) {
+//    __weak typeof(self) _weakSelf = self;
+//    TCGoodsInfoTableViewCell *cell = (TCGoodsInfoTableViewCell *)[_contentTableView cellForRowAtIndexPath:indexPath];
+//    NSArray *dataSource = self.addressDataSource; // dataSource 为空时，就默认使用框架内部提供的数据源（即 BRCity.plist）
+
+//    [BRAddressPickerView showAddressPickerWithShowType:BRAddressPickerModeCity dataSource:dataSource defaultSelected:nil isAutoSelect:NO themeColor:nil resultBlock:^(BRProvinceModel *province, BRCityModel *city, BRAreaModel *area) {
 //        cell.chooseAddress = [NSString stringWithFormat:@"%@ %@ %@", province.name, city.name, area.name] ;
-//
-//        [_weakSelf getGoodsInfoFeeWithCity_id:city.code];
+////        [_weakSelf getGoodsInfoFeeWithCity_id:city.code];
 //    } cancelBlock:^{
 //        NSLog(@"点击了背景视图或取消按钮");
 //    }];
-    
-    [BRAddressPickerView showAddressPickerWithShowType:BRAddressPickerModeCity dataSource:dataSource defaultSelected:nil isAutoSelect:NO themeColor:nil resultBlock:^(BRProvinceModel *province, BRCityModel *city, BRAreaModel *area) {
-        cell.chooseAddress = [NSString stringWithFormat:@"%@ %@ %@", province.name, city.name, area.name] ;
-        [_weakSelf getGoodsInfoFeeWithCity_id:city.code];
-    } cancelBlock:^{
-        NSLog(@"点击了背景视图或取消按钮");
-    }];
 }
 - (void)goodsInfoTableViewCellCollect:(UIButton *)button {
-    if (!User_ID) {
-        [self presentLoginVC];
-        return;
-    }
+//    if (!User_ID) {
+//        [self presentLoginVC];
+//        return;
+//    }
     [self goodsCollectMethod];
 }
 
-- (void)presentLoginVC {
-    //跳到登录页面
-    TCUserLoginViewController *loginVC = [TCUserLoginViewController new];
-    [self.navigationController presentViewController:loginVC animated:YES completion:nil];
-}
+//- (void)presentLoginVC {
+//    //跳到登录页面
+//    TCUserLoginViewController *loginVC = [TCUserLoginViewController new];
+//    [self.navigationController presentViewController:loginVC animated:YES completion:nil];
+//}
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     //    2、都有效果
@@ -695,21 +610,21 @@ static NSString *const MerchandiseShopBasicInfoTableViewCellID = @"MerchandiseSh
     }
     return _paramView;
 }
-- (TCBabyDeailtyCouponView *)couponView {
-    if (!_couponView) {
-        _couponView  = XIB(TCBabyDeailtyCouponView);
-        _couponView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-        _couponView.alpha = 0;
-        __weak typeof(self) _weakSelf = self;
-        _couponView.bayDeailtyCouponBlock = ^{
-            [UIView animateWithDuration:0.3 animations:^{
-                _weakSelf.couponView.downViewConstraint.constant = SCREEN_HEIGHT;
-                _weakSelf.couponView.alpha = 0;
-            }];
-        };
-    }
-    return _couponView;
-}
+//- (TCBabyDeailtyCouponView *)couponView {
+//    if (!_couponView) {
+//        _couponView  = XIB(TCBabyDeailtyCouponView);
+//        _couponView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+//        _couponView.alpha = 0;
+//        __weak typeof(self) _weakSelf = self;
+//        _couponView.bayDeailtyCouponBlock = ^{
+//            [UIView animateWithDuration:0.3 animations:^{
+//                _weakSelf.couponView.downViewConstraint.constant = SCREEN_HEIGHT;
+//                _weakSelf.couponView.alpha = 0;
+//            }];
+//        };
+//    }
+//    return _couponView;
+//}
 - (NSMutableArray *)bannerImgArray {
     if (!_bannerImgArray) {
         _bannerImgArray  = [[NSMutableArray alloc] init];

@@ -2,7 +2,8 @@
  宝贝详情
  */
 #import "BaseViewController.h"
-#import "BaseNatigationViewController.h"
+#import "LLSegmentBar.h"
+//#import "BaseNatigationViewController.h"
 #import "TCGoodsModel.h"
 
 @class TCBabyDeailtyViewController;
@@ -15,7 +16,7 @@
 
 @property (nonatomic,strong)LLSegmentBar *segmentBar;
 
-@property (nonatomic,strong)BaseNatigationViewController *baseNavController;
+//@property (nonatomic,strong)BaseNatigationViewController *baseNavController;
 /**     */
 @property (strong, nonatomic) UILabel *titileLbl;
 

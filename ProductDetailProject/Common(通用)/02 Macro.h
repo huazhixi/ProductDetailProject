@@ -48,6 +48,14 @@
 #define RECT_CHANGE_height(v,h)     CGRectMake(X(v), Y(v), WIDTH(v), h)
 #define RECT_CHANGE_size(v,w,h)     CGRectMake(X(v), Y(v), w, h)
 
+#define SCREEN_BOUNDS    [UIScreen mainScreen].bounds
+#define SCREEN_WIDTH     [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT    [UIScreen mainScreen].bounds.size.height
+
+#define TCRatio ((SCREEN_WIDTH > 375) ? SCREEN_WIDTH/375 : SCREEN_WIDTH/375)
+
+#pragma mark - ------------------- XIB --------------------
+#define XIB(Class) [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([Class class]) owner:nil options:nil] firstObject]
 
 //项目主题颜色
 #define THEME_COLOR    RGB0X(0Xff00aa)
@@ -65,8 +73,13 @@
 #define Gray_Shop_Image @"orderShopImg"
 #define User_Avater_Image @"userIcon"
 
+//包括协议、地址、端口号...。含“/”，如果 URL_IMG_PREFIX 为空，则不含。
+static NSString *const URL_IMG_PREFIX = @"http://tp.homebank.shop";
 
 #define Now_Longitude [[NSUserDefaults standardUserDefaults] objectForKey:@"longitude"]
 #define Now_Latitude [[NSUserDefaults standardUserDefaults] objectForKey:@"latitude"]
+
+// 图片名称
+#define IMAGE(string) [UIImage imageNamed:string]
 
 #endif /* Macro_h */

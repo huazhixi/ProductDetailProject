@@ -4,25 +4,26 @@
  */
 
 #import "TCBabyDeailtyRootVC.h"
-#import "TCBabyDeailtyComentVC.h"
-#import "TCBabyDeailtyWebVC.h"
 #import "TCBabyDeailtyViewController.h"
-#import "TCShopCartViewController.h"
+#import "TCBabyDeailtyWebVC.h"
+#import "TCBabyDeailtyComentVC.h"
+//#import "TCShopCartViewController.h"
 
-#import "UIColor+hex.h"
-#import "UIImage+ColorCreateImage.h"
+#import "02 Macro.h"
+#import "03 Constant.h"
+#import "MJExtension.h"
+//#import "UIColor+hex.h"
+#import "LLSegmentBarVC.h"
+//#import "UIImage+ColorCreateImage.h"
+#import "WRNavigationBar.h"
 
-#import "TCGoodsModel.h"
-#import "ShareSDKManager.h"
+//#import "ShareSDKManager.h"
 
-#import "TCUserLoginViewController.h"
-#import <BaiduMapAPI_Location/BMKLocationService.h>
+//#import "TCUserLoginViewController.h"
 
 #define Height_Header SCREEN_WIDTH * 910 / 1200.0
 
-@interface TCBabyDeailtyRootVC ()<UIScrollViewDelegate, TCBabyDeailtyViewControllerDelegate, BMKLocationServiceDelegate>{
-    BMKLocationService *_locService;
-}
+@interface TCBabyDeailtyRootVC ()<UIScrollViewDelegate, TCBabyDeailtyViewControllerDelegate>
 /**     */
 @property (strong, nonatomic) UILabel *titileLbl;
 /**     */
@@ -35,12 +36,6 @@
 @property (strong, nonatomic) TCBabyDeailtyWebVC *webVC;
 /**     */
 @property (strong, nonatomic) TCBabyDeailtyComentVC *vc3;
-/**     */
-@property (strong, nonatomic) TCGoodsModel *goodsModel;
-/**   */
-@property (nonatomic, copy) NSString *longitude;
-/**   */
-@property (nonatomic, copy) NSString *latitude;
 @end
 
 @implementation TCBabyDeailtyRootVC
@@ -49,12 +44,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    //初始化BMKLocationService
-    _locService = [[BMKLocationService alloc]init];
-    _locService.delegate = self;
-    //启动LocationService
-    [_locService startUserLocationService];
     
     __weak typeof(self) _weakSelf = self;
     [self leftImageItem:@"blackBackImg" action:^{
@@ -62,33 +51,14 @@
     }];
     
     [self rightImageItem:@"goodsShareimage" action:^{//分享
-        [[ShareSDKManager shareInstance] shareGoodsModel:_weakSelf.goodsModel.goodsInfo];
+        
     }];
-//    HRBarItem *shopCarItem = [HRBarItem new];
-//    [shopCarItem setBackgroundImage:[UIImage imageNamed:@"goodsGouwuche"] forState:UIControlStateNormal];
-//    HRBarItem *shareItem = [HRBarItem new];
-//    [shareItem setBackgroundImage:[UIImage imageNamed:@"goodsShareimage"] forState:UIControlStateNormal];
-//
-//    [self rightItems:@[shareItem, shopCarItem] actions:^(NSInteger index) {
-//        if (index == 0) {//分享
-//            [[ShareSDKManager shareInstance] shareGoodsModel:_weakSelf.goodsModel.goodsInfo];
-//        } else if (index == 1) {// 购物车
-//            if (!User_ID) {
-//                [self presentLoginVC];
-//                return;
-//            }
-//            TCShopCartViewController *shopCartVC = [TCShopCartViewController new];
-//            [self.navigationController pushViewController:shopCartVC animated:YES];
-//        }
-//    }];
-    [self fetchGoodsData];
+    
+    [self setUI];
+    
+//    [self fetchGoodsData];
+    
     [self removeGoodsDetailView];
-}
-
-- (void)presentLoginVC {
-    //跳到登录页面
-    TCUserLoginViewController *loginVC = [TCUserLoginViewController new];
-    [self.navigationController presentViewController:loginVC animated:YES completion:nil];
 }
 
 - (void)removeGoodsDetailView {// 只保留两个商品详情页面
@@ -111,12 +81,9 @@
     [self wr_setNavBarBackgroundAlpha:0];
     [self wr_setNavBarShadowImageHidden:YES];
 }
-#pragma mark - BMKLocationServiceDelegate
-- (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
-    self.latitude = [NSString stringWithFormat:@"%f", userLocation.location.coordinate.latitude];
-    self.longitude = [NSString stringWithFormat:@"%f", userLocation.location.coordinate.longitude];
-    [self fetchGoodsData];
-    [_locService stopUserLocationService];
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
 }
 #pragma mark - 网络请求
 /**
@@ -124,46 +91,31 @@
  */
 - (void)fetchGoodsData {
     
-    typeof(self) _weakSelf = self;
-    [EasyLoadingView showLoading];
-    
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"id"] = _goodsID;
-    params[@"longitude"] = _longitude;
-    params[@"latitude"] = _latitude;
-    
-    [[HRRequest manager] POST:@"Product/productDetail" para:params success:^(id data) {
-        [EasyLoadingView hidenLoading];
-        NSLog(@"%@", data);
-        TCGoodsModel *goodsModel = [TCGoodsModel mj_objectWithKeyValues:data[@"data"]];
-        _weakSelf.goodsModel = goodsModel;
-        
-        [_weakSelf setUI];
-    } faiulre:^(NSString *errMsg) {
-        [EasyLoadingView hidenLoading];
-        if ([errMsg isEqual:ERROR_MESSAGE] || [errMsg isEqual:NET_NOT_WORK]) {
-            [EasyTextView showErrorText:errMsg];
-        } else {
-            [EasyTextView showInfoText:errMsg];
-        }
-    }];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"productDetail" ofType:@"json"];
+//    NSString *productlistStr = [NSString stringWithContentsOfFile:path usedEncoding:nil error:nil];
+//    NSDictionary *productlistDic = [productlistStr mj_JSONObject];
+//    TCGoodsModel *goodsModel = [TCGoodsModel mj_objectWithKeyValues:productlistDic[@"data"]];
+//    self.goodsModel = goodsModel;
+//    [self setUI];
 }
 -(void)setUI {
+    
+    UIView *titleView = [[UIView alloc] initWithFrame:(CGRect){0, 0, 320, 35}];
+    titleView.clipsToBounds = YES;
+    titleView.alpha = 0;
+    self.titleView = titleView;
+    
+    self.segmentVC.segmentBar.frame = CGRectMake(0, 0, 320, 35);
+    self.segmentVC.segmentBar.alpha = 0;
+    [titleView addSubview:self.segmentVC.segmentBar];
     
     UILabel *titileLbl = [[UILabel alloc] initWithFrame:(CGRect){0, 35, 320, 35}];
     titileLbl.text = @"图文详情";
     titileLbl.font = H14;
     titileLbl.textAlignment = NSTextAlignmentCenter;
     self.titileLbl = titileLbl;
-    
-    self.segmentVC.segmentBar.frame = CGRectMake(0, 0, 320, 35);
-    UIView *titleView = [[UIView alloc] initWithFrame:(CGRect){0, 0, 320, 35}];
-    titleView.clipsToBounds = YES;
     [titleView addSubview:titileLbl];
-    titleView.alpha = 0;
-    [titleView addSubview:self.segmentVC.segmentBar];
     self.navigationItem.titleView = titleView;
-    self.titleView = titleView;
     
     self.segmentVC.view.frame = self.view.bounds;
     [self.view addSubview:self.segmentVC.view];
@@ -182,11 +134,13 @@
 - (void)changeNavBarAlpha:(CGFloat)yOffset hiddenNavBar:(BOOL)hiddenNavBar {
     if (!hiddenNavBar) {
         self.titleView.alpha = 1;
+        self.segmentVC.segmentBar.alpha = 1;
         [self wr_setNavBarBackgroundAlpha:1];
     } else {
         CGFloat currentAlpha = (yOffset - (-0))/(Height_Header/2.0 - (-0));
         currentAlpha = currentAlpha <= 0.0 ? 0.0 : (currentAlpha >= 1.0 ? 1.0 : currentAlpha);
         self.titleView.alpha = currentAlpha;
+        self.segmentVC.segmentBar.alpha = currentAlpha;
         [self wr_setNavBarBackgroundAlpha:currentAlpha];
         if (currentAlpha >0.3) {
             [self.navigationController.navigationItem.leftBarButtonItem setImage:IMAGE(@"nav_back_btn_normal")];
@@ -206,7 +160,7 @@
         _vc1.delegate = self;
         _vc1.titileLbl = self.titileLbl;
         _vc1.segmentBar        = self.segmentVC.segmentBar;
-        _vc1.baseNavController = (BaseNatigationViewController *)self.navigationController;
+        
         _vc1.fatherVC          = self;
         _vc1.goodsModel = self.goodsModel;
         _vc1.goods_img = _goods_img;
@@ -217,7 +171,6 @@
     if (!_webVC) {
         _webVC  = [TCBabyDeailtyWebVC new];
         _webVC.segmentBar = self.segmentVC.segmentBar;
-        _webVC.baseNavController = (BaseNatigationViewController *)self.navigationController;
         _webVC.fatherVC = self;
         _webVC.htmlStr = self.goodsModel.descHtml;
     }
@@ -227,7 +180,6 @@
     if (!_vc3) {
         _vc3  = [TCBabyDeailtyComentVC new];
         _vc3.segmentBar        = self.segmentVC.segmentBar;
-        _vc3.baseNavController = (BaseNatigationViewController *)self.navigationController;
         _vc3.fatherVC          = self;
         _vc3.goodsID = _goodsID;
         _vc3.goodsModel = self.goodsModel;

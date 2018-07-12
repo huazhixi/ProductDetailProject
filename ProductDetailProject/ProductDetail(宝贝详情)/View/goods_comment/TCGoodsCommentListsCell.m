@@ -1,7 +1,10 @@
 
 
 #import "TCGoodsCommentListsCell.h"
-#import "NSString+HXExtension.h"
+//#import "NSString+HXExtension.h"
+#import "03 Constant.h"
+#import "02 Macro.h"
+#import "UIImageView+WebCache.h"
 
 @interface TCGoodsCommentListsCell()
 @property (weak, nonatomic) IBOutlet UIImageView *iconImage;
@@ -37,7 +40,7 @@
     }];
     
     _nameLab.text = commentModel.buyer_name;
-    _timeLab.text = [NSString changeTimeStampToYMDTime:s_Integer(commentModel.comment_time)];
+//    _timeLab.text = [NSString changeTimeStampToYMDTime:s_Integer(commentModel.comment_time)];
     _commentLab.text = commentModel.comment;
     _attarLab.text = commentModel.specification;
     

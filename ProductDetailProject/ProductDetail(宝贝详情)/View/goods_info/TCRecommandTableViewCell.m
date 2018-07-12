@@ -7,10 +7,15 @@
 //
 
 #import "TCRecommandTableViewCell.h"
+#import "Masonry.h"
+#import "02 Macro.h"
+#import "03 Constant.h"
 #import "TCGoodsCell.h"
 #import "UIViewController+Utils.h"
 #import "TCBabyDeailtyRootVC.h"
-#import "TCWarehouseDetailRootViewController.h"
+//#import "TCWarehouseDetailRootViewController.h"
+#import "TCGoodsModel.h"
+#import "MJExtension.h"
 
 static NSString *const TCGoodsCellID = @"TCGoodsCell";
 
@@ -87,16 +92,14 @@ static NSString *const TCGoodsCellID = @"TCGoodsCell";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     RecommendProduct *model = _recommendArray[indexPath.row];
     
-    if (_isDiancang) {// 电子仓库
-        TCWarehouseDetailRootViewController *detailVC = [TCWarehouseDetailRootViewController new];
-        detailVC.goods_id = s_Integer(model.goods_id);
-        [CurrentViewController.navigationController pushViewController:detailVC animated:YES];
-    } else {
-        TCBabyDeailtyRootVC *babyDetailVC = [TCBabyDeailtyRootVC new];
-        babyDetailVC.goodsID = s_Integer(model.goods_id);
-        babyDetailVC.goods_img = model.default_image;
-        [CurrentViewController.navigationController pushViewController:babyDetailVC animated:YES];
-    }
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"moreProductDetail" ofType:@"json"];
+    NSString *productlistStr = [NSString stringWithContentsOfFile:path usedEncoding:nil error:nil];
+    NSDictionary *productlistDic = [productlistStr mj_JSONObject];
+    TCGoodsModel *goodsModel = [TCGoodsModel mj_objectWithKeyValues:productlistDic[@"data"]];
+    
+    TCBabyDeailtyRootVC *babyDetailVC = [TCBabyDeailtyRootVC new];
+    babyDetailVC.goodsModel = goodsModel;
+    [CurrentViewController.navigationController pushViewController:babyDetailVC animated:YES];
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{

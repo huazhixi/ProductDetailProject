@@ -20,6 +20,52 @@
 		EC58603B20F6F294001ADE5B /* TCCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58603720F6F293001ADE5B /* TCCommentModel.m */; };
 		EC58603E20F6F314001ADE5B /* TCHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58603D20F6F313001ADE5B /* TCHomeModel.m */; };
 		EC58604720F6FD13001ADE5B /* productlist.json in Resources */ = {isa = PBXBuildFile; fileRef = EC58604620F6FD13001ADE5B /* productlist.json */; };
+		EC58608520F6FFDD001ADE5B /* PurchaseCarAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58604B20F6FFDD001ADE5B /* PurchaseCarAnimationTool.m */; };
+		EC58608620F6FFDD001ADE5B /* TCBabyDeailtyCommentListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58604E20F6FFDD001ADE5B /* TCBabyDeailtyCommentListVC.m */; };
+		EC58608720F6FFDD001ADE5B /* TCBabyDeailtyRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58604F20F6FFDD001ADE5B /* TCBabyDeailtyRootVC.m */; };
+		EC58608820F6FFDD001ADE5B /* TCBabyDeailtyWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58605220F6FFDD001ADE5B /* TCBabyDeailtyWebVC.m */; };
+		EC58608920F6FFDD001ADE5B /* TCBabyDeailtyComentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58605320F6FFDD001ADE5B /* TCBabyDeailtyComentVC.m */; };
+		EC58608A20F6FFDD001ADE5B /* TCBabyDeailtyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58605620F6FFDD001ADE5B /* TCBabyDeailtyViewController.m */; };
+		EC58608B20F6FFDD001ADE5B /* TCGoodsCommentListsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58605A20F6FFDD001ADE5B /* TCGoodsCommentListsCell.m */; };
+		EC58608C20F6FFDD001ADE5B /* TCGoodsCommentListsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58605B20F6FFDD001ADE5B /* TCGoodsCommentListsCell.xib */; };
+		EC58608D20F6FFDD001ADE5B /* TCBabyDeailtyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58605D20F6FFDD001ADE5B /* TCBabyDeailtyCell.m */; };
+		EC58608F20F6FFDD001ADE5B /* TCBabyDeailtyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58605F20F6FFDD001ADE5B /* TCBabyDeailtyCell.xib */; };
+		EC58609120F6FFDD001ADE5B /* TCSaleServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58606320F6FFDD001ADE5B /* TCSaleServiceCell.xib */; };
+		EC58609220F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58606420F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.m */; };
+		EC58609320F6FFDD001ADE5B /* TCGoodsParameterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58606520F6FFDD001ADE5B /* TCGoodsParameterView.xib */; };
+		EC58609420F6FFDD001ADE5B /* TCRecommandTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58606620F6FFDD001ADE5B /* TCRecommandTopTableViewCell.xib */; };
+		EC58609520F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58606C20F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.xib */; };
+		EC58609620F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58606D20F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.xib */; };
+		EC58609720F6FFDD001ADE5B /* TCRecommandTopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58606F20F6FFDD001ADE5B /* TCRecommandTopTableViewCell.m */; };
+		EC58609820F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607020F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.m */; };
+		EC58609920F6FFDD001ADE5B /* TCCycleScrollTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607120F6FFDD001ADE5B /* TCCycleScrollTableViewCell.m */; };
+		EC58609B20F6FFDD001ADE5B /* TCBabyDetailFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607420F6FFDD001ADE5B /* TCBabyDetailFooterView.m */; };
+		EC58609C20F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607520F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.m */; };
+		EC58609D20F6FFDD001ADE5B /* TCBabyDetailFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58607620F6FFDD001ADE5B /* TCBabyDetailFooterView.xib */; };
+		EC58609E20F6FFDD001ADE5B /* TCSaleServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607720F6FFDD001ADE5B /* TCSaleServiceCell.m */; };
+		EC58609F20F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607820F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.m */; };
+		EC5860A020F6FFDE001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607A20F6FFDD001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.m */; };
+		EC5860A120F6FFDE001ADE5B /* TCRecommandTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607B20F6FFDD001ADE5B /* TCRecommandTableViewCell.m */; };
+		EC5860A220F6FFDE001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58607C20F6FFDD001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.xib */; };
+		EC5860A320F6FFDE001ADE5B /* TCGoodsParameterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC58607D20F6FFDD001ADE5B /* TCGoodsParameterView.m */; };
+		EC5860A420F6FFDE001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58607E20F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.xib */; };
+		EC5860A520F6FFDE001ADE5B /* TCBabyDeailtyBottomToolsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC58607F20F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.xib */; };
+		EC5860AC20F70249001ADE5B /* HRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860A920F70249001ADE5B /* HRBaseViewController.m */; };
+		EC5860AD20F70249001ADE5B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860AA20F70249001ADE5B /* BaseViewController.m */; };
+		EC5860B020F70289001ADE5B /* HRBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860AF20F70288001ADE5B /* HRBarItem.m */; };
+		EC5860B620F705A1001ADE5B /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860B520F705A1001ADE5B /* UIViewController+Utils.m */; };
+		EC5860C320F7066D001ADE5B /* UIView+LLSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860BB20F7066D001ADE5B /* UIView+LLSegmentBar.m */; };
+		EC5860C420F7066D001ADE5B /* LLSegmentBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860BF20F7066D001ADE5B /* LLSegmentBarConfig.m */; };
+		EC5860C520F7066D001ADE5B /* LLSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860C120F7066D001ADE5B /* LLSegmentBar.m */; };
+		EC5860C620F7066D001ADE5B /* LLSegmentBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860C220F7066D001ADE5B /* LLSegmentBarVC.m */; };
+		EC5860D220F70756001ADE5B /* XPSemiModalPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860C820F70756001ADE5B /* XPSemiModalPresentationController.m */; };
+		EC5860D320F70756001ADE5B /* UIViewController+XPSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860C920F70756001ADE5B /* UIViewController+XPSemiModal.m */; };
+		EC5860D420F70756001ADE5B /* XPSemiModalAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860CB20F70756001ADE5B /* XPSemiModalAnimatedTransitioning.m */; };
+		EC5860D520F70756001ADE5B /* XPSemiModalConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860CD20F70756001ADE5B /* XPSemiModalConfiguration.m */; };
+		EC5860D620F70756001ADE5B /* XPSemiModalTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860D120F70756001ADE5B /* XPSemiModalTransitioningDelegate.m */; };
+		EC5860D920F707BF001ADE5B /* NSObject+HXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5860D820F707BF001ADE5B /* NSObject+HXExtension.m */; };
+		EC5860DB20F72C87001ADE5B /* productDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5860DA20F72C87001ADE5B /* productDetail.json */; };
+		EC5860DD20F73471001ADE5B /* moreProductDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = EC5860DC20F73471001ADE5B /* moreProductDetail.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +94,86 @@
 		EC58604020F6F9D0001ADE5B /* 02 Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "02 Macro.h"; sourceTree = "<group>"; };
 		EC58604420F6F9D0001ADE5B /* 03 Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "03 Constant.h"; sourceTree = "<group>"; };
 		EC58604620F6FD13001ADE5B /* productlist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productlist.json; sourceTree = "<group>"; };
+		EC58604A20F6FFDD001ADE5B /* PurchaseCarAnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseCarAnimationTool.h; sourceTree = "<group>"; };
+		EC58604B20F6FFDD001ADE5B /* PurchaseCarAnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseCarAnimationTool.m; sourceTree = "<group>"; };
+		EC58604D20F6FFDD001ADE5B /* TCBabyDeailtyWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDeailtyWebVC.h; sourceTree = "<group>"; };
+		EC58604E20F6FFDD001ADE5B /* TCBabyDeailtyCommentListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDeailtyCommentListVC.m; sourceTree = "<group>"; };
+		EC58604F20F6FFDD001ADE5B /* TCBabyDeailtyRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDeailtyRootVC.m; sourceTree = "<group>"; };
+		EC58605020F6FFDD001ADE5B /* TCBabyDeailtyComentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDeailtyComentVC.h; sourceTree = "<group>"; };
+		EC58605120F6FFDD001ADE5B /* TCBabyDeailtyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDeailtyViewController.h; sourceTree = "<group>"; };
+		EC58605220F6FFDD001ADE5B /* TCBabyDeailtyWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDeailtyWebVC.m; sourceTree = "<group>"; };
+		EC58605320F6FFDD001ADE5B /* TCBabyDeailtyComentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDeailtyComentVC.m; sourceTree = "<group>"; };
+		EC58605420F6FFDD001ADE5B /* TCBabyDeailtyRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDeailtyRootVC.h; sourceTree = "<group>"; };
+		EC58605520F6FFDD001ADE5B /* TCBabyDeailtyCommentListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDeailtyCommentListVC.h; sourceTree = "<group>"; };
+		EC58605620F6FFDD001ADE5B /* TCBabyDeailtyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDeailtyViewController.m; sourceTree = "<group>"; };
+		EC58605920F6FFDD001ADE5B /* TCGoodsCommentListsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoodsCommentListsCell.h; sourceTree = "<group>"; };
+		EC58605A20F6FFDD001ADE5B /* TCGoodsCommentListsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoodsCommentListsCell.m; sourceTree = "<group>"; };
+		EC58605B20F6FFDD001ADE5B /* TCGoodsCommentListsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCGoodsCommentListsCell.xib; sourceTree = "<group>"; };
+		EC58605D20F6FFDD001ADE5B /* TCBabyDeailtyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDeailtyCell.m; sourceTree = "<group>"; };
+		EC58605F20F6FFDD001ADE5B /* TCBabyDeailtyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCBabyDeailtyCell.xib; sourceTree = "<group>"; };
+		EC58606020F6FFDD001ADE5B /* TCRecommandTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRecommandTableViewCell.h; sourceTree = "<group>"; };
+		EC58606120F6FFDD001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDetailMoreJudgeTableViewCell.h; sourceTree = "<group>"; };
+		EC58606320F6FFDD001ADE5B /* TCSaleServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCSaleServiceCell.xib; sourceTree = "<group>"; };
+		EC58606420F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoodsInfoTableViewCell.m; sourceTree = "<group>"; };
+		EC58606520F6FFDD001ADE5B /* TCGoodsParameterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCGoodsParameterView.xib; sourceTree = "<group>"; };
+		EC58606620F6FFDD001ADE5B /* TCRecommandTopTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCRecommandTopTableViewCell.xib; sourceTree = "<group>"; };
+		EC58606720F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDetailJudgeCountTableViewCell.h; sourceTree = "<group>"; };
+		EC58606820F6FFDD001ADE5B /* TCSaleServiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSaleServiceCell.h; sourceTree = "<group>"; };
+		EC58606920F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDeailtyBottomToolsView.h; sourceTree = "<group>"; };
+		EC58606A20F6FFDD001ADE5B /* TCBabyDetailFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDetailFooterView.h; sourceTree = "<group>"; };
+		EC58606B20F6FFDD001ADE5B /* TCGoodsParameterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoodsParameterView.h; sourceTree = "<group>"; };
+		EC58606C20F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCBabyDetailJudgeCountTableViewCell.xib; sourceTree = "<group>"; };
+		EC58606D20F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCGoodsInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EC58606F20F6FFDD001ADE5B /* TCRecommandTopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRecommandTopTableViewCell.m; sourceTree = "<group>"; };
+		EC58607020F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDeailtyShopBasicInfoTableViewCell.m; sourceTree = "<group>"; };
+		EC58607120F6FFDD001ADE5B /* TCCycleScrollTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCCycleScrollTableViewCell.m; sourceTree = "<group>"; };
+		EC58607320F6FFDD001ADE5B /* TCBabyDeailtyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDeailtyCell.h; sourceTree = "<group>"; };
+		EC58607420F6FFDD001ADE5B /* TCBabyDetailFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDetailFooterView.m; sourceTree = "<group>"; };
+		EC58607520F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDeailtyBottomToolsView.m; sourceTree = "<group>"; };
+		EC58607620F6FFDD001ADE5B /* TCBabyDetailFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCBabyDetailFooterView.xib; sourceTree = "<group>"; };
+		EC58607720F6FFDD001ADE5B /* TCSaleServiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSaleServiceCell.m; sourceTree = "<group>"; };
+		EC58607820F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDetailJudgeCountTableViewCell.m; sourceTree = "<group>"; };
+		EC58607920F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCGoodsInfoTableViewCell.h; sourceTree = "<group>"; };
+		EC58607A20F6FFDD001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBabyDetailMoreJudgeTableViewCell.m; sourceTree = "<group>"; };
+		EC58607B20F6FFDD001ADE5B /* TCRecommandTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRecommandTableViewCell.m; sourceTree = "<group>"; };
+		EC58607C20F6FFDD001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCBabyDetailMoreJudgeTableViewCell.xib; sourceTree = "<group>"; };
+		EC58607D20F6FFDD001ADE5B /* TCGoodsParameterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCGoodsParameterView.m; sourceTree = "<group>"; };
+		EC58607E20F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCBabyDeailtyShopBasicInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EC58607F20F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TCBabyDeailtyBottomToolsView.xib; sourceTree = "<group>"; };
+		EC58608120F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBabyDeailtyShopBasicInfoTableViewCell.h; sourceTree = "<group>"; };
+		EC58608220F6FFDD001ADE5B /* TCCycleScrollTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCCycleScrollTableViewCell.h; sourceTree = "<group>"; };
+		EC58608420F6FFDD001ADE5B /* TCRecommandTopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRecommandTopTableViewCell.h; sourceTree = "<group>"; };
+		EC5860A820F70249001ADE5B /* HRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRBaseViewController.h; sourceTree = "<group>"; };
+		EC5860A920F70249001ADE5B /* HRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRBaseViewController.m; sourceTree = "<group>"; };
+		EC5860AA20F70249001ADE5B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		EC5860AB20F70249001ADE5B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		EC5860AE20F70288001ADE5B /* HRBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRBarItem.h; sourceTree = "<group>"; };
+		EC5860AF20F70288001ADE5B /* HRBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRBarItem.m; sourceTree = "<group>"; };
+		EC5860B120F702E8001ADE5B /* HRBaseViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRBaseViewControllerProtocol.h; sourceTree = "<group>"; };
+		EC5860B420F705A0001ADE5B /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		EC5860B520F705A1001ADE5B /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		EC5860BB20F7066D001ADE5B /* UIView+LLSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLSegmentBar.m"; sourceTree = "<group>"; };
+		EC5860BC20F7066D001ADE5B /* LLSegmentBarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBarConfig.h; sourceTree = "<group>"; };
+		EC5860BD20F7066D001ADE5B /* LLSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBar.h; sourceTree = "<group>"; };
+		EC5860BE20F7066D001ADE5B /* LLSegmentBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBarVC.h; sourceTree = "<group>"; };
+		EC5860BF20F7066D001ADE5B /* LLSegmentBarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBarConfig.m; sourceTree = "<group>"; };
+		EC5860C020F7066D001ADE5B /* UIView+LLSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LLSegmentBar.h"; sourceTree = "<group>"; };
+		EC5860C120F7066D001ADE5B /* LLSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBar.m; sourceTree = "<group>"; };
+		EC5860C220F7066D001ADE5B /* LLSegmentBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBarVC.m; sourceTree = "<group>"; };
+		EC5860C820F70756001ADE5B /* XPSemiModalPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSemiModalPresentationController.m; sourceTree = "<group>"; };
+		EC5860C920F70756001ADE5B /* UIViewController+XPSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XPSemiModal.m"; sourceTree = "<group>"; };
+		EC5860CA20F70756001ADE5B /* XPSemiModalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSemiModalConfiguration.h; sourceTree = "<group>"; };
+		EC5860CB20F70756001ADE5B /* XPSemiModalAnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSemiModalAnimatedTransitioning.m; sourceTree = "<group>"; };
+		EC5860CC20F70756001ADE5B /* XPSemiModalTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSemiModalTransitioningDelegate.h; sourceTree = "<group>"; };
+		EC5860CD20F70756001ADE5B /* XPSemiModalConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSemiModalConfiguration.m; sourceTree = "<group>"; };
+		EC5860CE20F70756001ADE5B /* UIViewController+XPSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XPSemiModal.h"; sourceTree = "<group>"; };
+		EC5860CF20F70756001ADE5B /* XPSemiModalPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSemiModalPresentationController.h; sourceTree = "<group>"; };
+		EC5860D020F70756001ADE5B /* XPSemiModalAnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSemiModalAnimatedTransitioning.h; sourceTree = "<group>"; };
+		EC5860D120F70756001ADE5B /* XPSemiModalTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSemiModalTransitioningDelegate.m; sourceTree = "<group>"; };
+		EC5860D720F707BF001ADE5B /* NSObject+HXExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+HXExtension.h"; sourceTree = "<group>"; };
+		EC5860D820F707BF001ADE5B /* NSObject+HXExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HXExtension.m"; sourceTree = "<group>"; };
+		EC5860DA20F72C87001ADE5B /* productDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = productDetail.json; sourceTree = "<group>"; };
+		EC5860DC20F73471001ADE5B /* moreProductDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = moreProductDetail.json; sourceTree = "<group>"; };
 		F3C2430FA121927D529B7A50 /* Pods-ProductDetailProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductDetailProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProductDetailProject/Pods-ProductDetailProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,8 +225,12 @@
 				EC270B6320F60CA000AAF959 /* ProductListViewController.m */,
 				EC58602F20F6F284001ADE5B /* TCGoodsCell.h */,
 				EC58603020F6F285001ADE5B /* TCGoodsCell.m */,
+				EC58604820F6FFDD001ADE5B /* ProductDetail(宝贝详情) */,
 				EC58603220F6F293001ADE5B /* Model(商品详情) */,
+				EC5860A720F70210001ADE5B /* BaseVC */,
 				EC58603F20F6F9D0001ADE5B /* Common(通用) */,
+				EC5860B220F70572001ADE5B /* Util(工具) */,
+				EC5860B720F70662001ADE5B /* Vender */,
 				EC58604520F6FCE4001ADE5B /* Resource(json数据) */,
 				EC270B4F20F5F00900AAF959 /* Main.storyboard */,
 				EC270B5420F5F00B00AAF959 /* LaunchScreen.storyboard */,
@@ -139,8 +269,196 @@
 			isa = PBXGroup;
 			children = (
 				EC58604620F6FD13001ADE5B /* productlist.json */,
+				EC5860DA20F72C87001ADE5B /* productDetail.json */,
+				EC5860DC20F73471001ADE5B /* moreProductDetail.json */,
 			);
 			path = "Resource(json数据)";
+			sourceTree = "<group>";
+		};
+		EC58604820F6FFDD001ADE5B /* ProductDetail(宝贝详情) */ = {
+			isa = PBXGroup;
+			children = (
+				EC58604C20F6FFDD001ADE5B /* Controller */,
+				EC58605720F6FFDD001ADE5B /* View */,
+				EC58604920F6FFDD001ADE5B /* Animation */,
+			);
+			path = "ProductDetail(宝贝详情)";
+			sourceTree = "<group>";
+		};
+		EC58604920F6FFDD001ADE5B /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				EC58604A20F6FFDD001ADE5B /* PurchaseCarAnimationTool.h */,
+				EC58604B20F6FFDD001ADE5B /* PurchaseCarAnimationTool.m */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		EC58604C20F6FFDD001ADE5B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC58605420F6FFDD001ADE5B /* TCBabyDeailtyRootVC.h */,
+				EC58604F20F6FFDD001ADE5B /* TCBabyDeailtyRootVC.m */,
+				EC58605120F6FFDD001ADE5B /* TCBabyDeailtyViewController.h */,
+				EC58605620F6FFDD001ADE5B /* TCBabyDeailtyViewController.m */,
+				EC58604D20F6FFDD001ADE5B /* TCBabyDeailtyWebVC.h */,
+				EC58605220F6FFDD001ADE5B /* TCBabyDeailtyWebVC.m */,
+				EC58605520F6FFDD001ADE5B /* TCBabyDeailtyCommentListVC.h */,
+				EC58604E20F6FFDD001ADE5B /* TCBabyDeailtyCommentListVC.m */,
+				EC58605020F6FFDD001ADE5B /* TCBabyDeailtyComentVC.h */,
+				EC58605320F6FFDD001ADE5B /* TCBabyDeailtyComentVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC58605720F6FFDD001ADE5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC58605820F6FFDD001ADE5B /* goods_comment */,
+				EC58605C20F6FFDD001ADE5B /* goods_info */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC58605820F6FFDD001ADE5B /* goods_comment */ = {
+			isa = PBXGroup;
+			children = (
+				EC58605920F6FFDD001ADE5B /* TCGoodsCommentListsCell.h */,
+				EC58605A20F6FFDD001ADE5B /* TCGoodsCommentListsCell.m */,
+				EC58605B20F6FFDD001ADE5B /* TCGoodsCommentListsCell.xib */,
+			);
+			path = goods_comment;
+			sourceTree = "<group>";
+		};
+		EC58605C20F6FFDD001ADE5B /* goods_info */ = {
+			isa = PBXGroup;
+			children = (
+				EC58608220F6FFDD001ADE5B /* TCCycleScrollTableViewCell.h */,
+				EC58607120F6FFDD001ADE5B /* TCCycleScrollTableViewCell.m */,
+				EC58607920F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.h */,
+				EC58606420F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.m */,
+				EC58606D20F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.xib */,
+				EC58607320F6FFDD001ADE5B /* TCBabyDeailtyCell.h */,
+				EC58605D20F6FFDD001ADE5B /* TCBabyDeailtyCell.m */,
+				EC58605F20F6FFDD001ADE5B /* TCBabyDeailtyCell.xib */,
+				EC58606820F6FFDD001ADE5B /* TCSaleServiceCell.h */,
+				EC58607720F6FFDD001ADE5B /* TCSaleServiceCell.m */,
+				EC58606320F6FFDD001ADE5B /* TCSaleServiceCell.xib */,
+				EC58606020F6FFDD001ADE5B /* TCRecommandTableViewCell.h */,
+				EC58607B20F6FFDD001ADE5B /* TCRecommandTableViewCell.m */,
+				EC58606B20F6FFDD001ADE5B /* TCGoodsParameterView.h */,
+				EC58607D20F6FFDD001ADE5B /* TCGoodsParameterView.m */,
+				EC58606520F6FFDD001ADE5B /* TCGoodsParameterView.xib */,
+				EC58608420F6FFDD001ADE5B /* TCRecommandTopTableViewCell.h */,
+				EC58606F20F6FFDD001ADE5B /* TCRecommandTopTableViewCell.m */,
+				EC58606620F6FFDD001ADE5B /* TCRecommandTopTableViewCell.xib */,
+				EC58606720F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.h */,
+				EC58607820F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.m */,
+				EC58606C20F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.xib */,
+				EC58606A20F6FFDD001ADE5B /* TCBabyDetailFooterView.h */,
+				EC58607420F6FFDD001ADE5B /* TCBabyDetailFooterView.m */,
+				EC58607620F6FFDD001ADE5B /* TCBabyDetailFooterView.xib */,
+				EC58606120F6FFDD001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.h */,
+				EC58607A20F6FFDD001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.m */,
+				EC58607C20F6FFDD001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.xib */,
+				EC58608120F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.h */,
+				EC58607020F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.m */,
+				EC58607E20F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.xib */,
+				EC58606920F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.h */,
+				EC58607520F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.m */,
+				EC58607F20F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.xib */,
+			);
+			path = goods_info;
+			sourceTree = "<group>";
+		};
+		EC5860A720F70210001ADE5B /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860AB20F70249001ADE5B /* BaseViewController.h */,
+				EC5860AA20F70249001ADE5B /* BaseViewController.m */,
+				EC5860A820F70249001ADE5B /* HRBaseViewController.h */,
+				EC5860A920F70249001ADE5B /* HRBaseViewController.m */,
+				EC5860AE20F70288001ADE5B /* HRBarItem.h */,
+				EC5860AF20F70288001ADE5B /* HRBarItem.m */,
+				EC5860B120F702E8001ADE5B /* HRBaseViewControllerProtocol.h */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		EC5860B220F70572001ADE5B /* Util(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860B320F7058A001ADE5B /* Category */,
+			);
+			path = "Util(工具)";
+			sourceTree = "<group>";
+		};
+		EC5860B320F7058A001ADE5B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860B420F705A0001ADE5B /* UIViewController+Utils.h */,
+				EC5860B520F705A1001ADE5B /* UIViewController+Utils.m */,
+				EC5860D720F707BF001ADE5B /* NSObject+HXExtension.h */,
+				EC5860D820F707BF001ADE5B /* NSObject+HXExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EC5860B720F70662001ADE5B /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860C720F70756001ADE5B /* SemiModal */,
+				EC5860B820F7066D001ADE5B /* 滑动标签 */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		EC5860B820F7066D001ADE5B /* 滑动标签 */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860B920F7066D001ADE5B /* LLSegmentBar */,
+			);
+			path = "滑动标签";
+			sourceTree = "<group>";
+		};
+		EC5860B920F7066D001ADE5B /* LLSegmentBar */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860BA20F7066D001ADE5B /* Classes */,
+			);
+			path = LLSegmentBar;
+			sourceTree = "<group>";
+		};
+		EC5860BA20F7066D001ADE5B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860BB20F7066D001ADE5B /* UIView+LLSegmentBar.m */,
+				EC5860BC20F7066D001ADE5B /* LLSegmentBarConfig.h */,
+				EC5860BD20F7066D001ADE5B /* LLSegmentBar.h */,
+				EC5860BE20F7066D001ADE5B /* LLSegmentBarVC.h */,
+				EC5860BF20F7066D001ADE5B /* LLSegmentBarConfig.m */,
+				EC5860C020F7066D001ADE5B /* UIView+LLSegmentBar.h */,
+				EC5860C120F7066D001ADE5B /* LLSegmentBar.m */,
+				EC5860C220F7066D001ADE5B /* LLSegmentBarVC.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EC5860C720F70756001ADE5B /* SemiModal */ = {
+			isa = PBXGroup;
+			children = (
+				EC5860C820F70756001ADE5B /* XPSemiModalPresentationController.m */,
+				EC5860C920F70756001ADE5B /* UIViewController+XPSemiModal.m */,
+				EC5860CA20F70756001ADE5B /* XPSemiModalConfiguration.h */,
+				EC5860CB20F70756001ADE5B /* XPSemiModalAnimatedTransitioning.m */,
+				EC5860CC20F70756001ADE5B /* XPSemiModalTransitioningDelegate.h */,
+				EC5860CD20F70756001ADE5B /* XPSemiModalConfiguration.m */,
+				EC5860CE20F70756001ADE5B /* UIViewController+XPSemiModal.h */,
+				EC5860CF20F70756001ADE5B /* XPSemiModalPresentationController.h */,
+				EC5860D020F70756001ADE5B /* XPSemiModalAnimatedTransitioning.h */,
+				EC5860D120F70756001ADE5B /* XPSemiModalTransitioningDelegate.m */,
+			);
+			path = SemiModal;
 			sourceTree = "<group>";
 		};
 		F67E29584491B70A1CC99D2A /* Frameworks */ = {
@@ -211,10 +529,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5860DD20F73471001ADE5B /* moreProductDetail.json in Resources */,
+				EC58609320F6FFDD001ADE5B /* TCGoodsParameterView.xib in Resources */,
 				EC270B5620F5F00B00AAF959 /* LaunchScreen.storyboard in Resources */,
 				EC58604720F6FD13001ADE5B /* productlist.json in Resources */,
+				EC58609520F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.xib in Resources */,
+				EC58608C20F6FFDD001ADE5B /* TCGoodsCommentListsCell.xib in Resources */,
 				EC270B5320F5F00B00AAF959 /* Assets.xcassets in Resources */,
+				EC5860A420F6FFDE001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.xib in Resources */,
+				EC58609420F6FFDD001ADE5B /* TCRecommandTopTableViewCell.xib in Resources */,
+				EC5860A520F6FFDE001ADE5B /* TCBabyDeailtyBottomToolsView.xib in Resources */,
+				EC58609D20F6FFDD001ADE5B /* TCBabyDetailFooterView.xib in Resources */,
 				EC270B5120F5F00900AAF959 /* Main.storyboard in Resources */,
+				EC58609120F6FFDD001ADE5B /* TCSaleServiceCell.xib in Resources */,
+				EC5860A220F6FFDE001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.xib in Resources */,
+				EC58609620F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.xib in Resources */,
+				EC5860DB20F72C87001ADE5B /* productDetail.json in Resources */,
+				EC58608F20F6FFDD001ADE5B /* TCBabyDeailtyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +575,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ProductDetailProject/Pods-ProductDetailProject-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyShowView/EasyShowView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
@@ -263,6 +595,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyShowView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
@@ -309,14 +642,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5860C620F7066D001ADE5B /* LLSegmentBarVC.m in Sources */,
+				EC58609920F6FFDD001ADE5B /* TCCycleScrollTableViewCell.m in Sources */,
+				EC5860B620F705A1001ADE5B /* UIViewController+Utils.m in Sources */,
+				EC58608A20F6FFDD001ADE5B /* TCBabyDeailtyViewController.m in Sources */,
+				EC5860A120F6FFDE001ADE5B /* TCRecommandTableViewCell.m in Sources */,
+				EC58609C20F6FFDD001ADE5B /* TCBabyDeailtyBottomToolsView.m in Sources */,
+				EC5860B020F70289001ADE5B /* HRBarItem.m in Sources */,
+				EC58609820F6FFDD001ADE5B /* TCBabyDeailtyShopBasicInfoTableViewCell.m in Sources */,
+				EC58608720F6FFDD001ADE5B /* TCBabyDeailtyRootVC.m in Sources */,
+				EC58608920F6FFDD001ADE5B /* TCBabyDeailtyComentVC.m in Sources */,
+				EC5860D620F70756001ADE5B /* XPSemiModalTransitioningDelegate.m in Sources */,
 				EC270B6420F60CA000AAF959 /* ProductListViewController.m in Sources */,
 				EC58603B20F6F294001ADE5B /* TCCommentModel.m in Sources */,
+				EC58609F20F6FFDD001ADE5B /* TCBabyDetailJudgeCountTableViewCell.m in Sources */,
 				EC58603E20F6F314001ADE5B /* TCHomeModel.m in Sources */,
+				EC58609220F6FFDD001ADE5B /* TCGoodsInfoTableViewCell.m in Sources */,
 				EC58603920F6F294001ADE5B /* TCGoodsModel.m in Sources */,
+				EC5860C420F7066D001ADE5B /* LLSegmentBarConfig.m in Sources */,
+				EC58609E20F6FFDD001ADE5B /* TCSaleServiceCell.m in Sources */,
 				EC270B5920F5F00B00AAF959 /* main.m in Sources */,
+				EC5860D220F70756001ADE5B /* XPSemiModalPresentationController.m in Sources */,
+				EC5860D520F70756001ADE5B /* XPSemiModalConfiguration.m in Sources */,
 				EC58603A20F6F294001ADE5B /* TCGoodsAddressModel.m in Sources */,
+				EC5860AD20F70249001ADE5B /* BaseViewController.m in Sources */,
+				EC5860D320F70756001ADE5B /* UIViewController+XPSemiModal.m in Sources */,
+				EC5860D920F707BF001ADE5B /* NSObject+HXExtension.m in Sources */,
+				EC5860AC20F70249001ADE5B /* HRBaseViewController.m in Sources */,
+				EC58608820F6FFDD001ADE5B /* TCBabyDeailtyWebVC.m in Sources */,
 				EC58603120F6F285001ADE5B /* TCGoodsCell.m in Sources */,
+				EC58609B20F6FFDD001ADE5B /* TCBabyDetailFooterView.m in Sources */,
+				EC5860D420F70756001ADE5B /* XPSemiModalAnimatedTransitioning.m in Sources */,
+				EC5860A320F6FFDE001ADE5B /* TCGoodsParameterView.m in Sources */,
+				EC58608B20F6FFDD001ADE5B /* TCGoodsCommentListsCell.m in Sources */,
+				EC58609720F6FFDD001ADE5B /* TCRecommandTopTableViewCell.m in Sources */,
+				EC5860C520F7066D001ADE5B /* LLSegmentBar.m in Sources */,
+				EC58608520F6FFDD001ADE5B /* PurchaseCarAnimationTool.m in Sources */,
+				EC58608620F6FFDD001ADE5B /* TCBabyDeailtyCommentListVC.m in Sources */,
 				EC270B4B20F5F00900AAF959 /* AppDelegate.m in Sources */,
+				EC5860A020F6FFDE001ADE5B /* TCBabyDetailMoreJudgeTableViewCell.m in Sources */,
+				EC5860C320F7066D001ADE5B /* UIView+LLSegmentBar.m in Sources */,
+				EC58608D20F6FFDD001ADE5B /* TCBabyDeailtyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +833,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huazhixi.ProductDetailProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -485,6 +852,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huazhixi.ProductDetailProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};

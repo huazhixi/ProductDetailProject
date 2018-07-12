@@ -8,11 +8,14 @@
 
 #import "ProductListViewController.h"
 #import "Masonry.h"
+#import "02 Macro.h"
 #import "03 Constant.h"
 #import "MJExtension.h"
 
 #import "TCHomeModel.h"
 #import "TCGoodsCell.h"
+#import "TCGoodsModel.h"
+#import "TCBabyDeailtyRootVC.h"
 
 #define SCREEN_WIDTH     [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT    [UIScreen mainScreen].bounds.size.height
@@ -43,7 +46,8 @@ static NSString *const TCGoodsCellID = @"TCGoodsCell";
     [super viewDidLayoutSubviews];
     
     [_collectionView mas_makeConstraints:^(MASConstraintMaker *make){
-        make.top.left.bottom.right.equalTo(self.view).offset(0);
+        make.top.equalTo(self.view).offset(kStatusBarAndNavigationBarHeight);
+        make.left.bottom.right.equalTo(self.view).offset(0);
     }];
 }
 
@@ -74,6 +78,14 @@ static NSString *const TCGoodsCellID = @"TCGoodsCell";
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"productDetail" ofType:@"json"];
+    NSString *productlistStr = [NSString stringWithContentsOfFile:path usedEncoding:nil error:nil];
+    NSDictionary *productlistDic = [productlistStr mj_JSONObject];
+    TCGoodsModel *goodsModel = [TCGoodsModel mj_objectWithKeyValues:productlistDic[@"data"]];
+    
+    TCBabyDeailtyRootVC *detailRootVC = [TCBabyDeailtyRootVC new];
+    detailRootVC.goodsModel = goodsModel;
+    [self.navigationController pushViewController:detailRootVC animated:YES];
 }
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {

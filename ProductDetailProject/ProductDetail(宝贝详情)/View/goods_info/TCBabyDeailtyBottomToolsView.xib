@@ -373,7 +373,7 @@
                 <outlet property="storeBtnView" destination="aPA-7W-k05" id="bKq-1J-dCh"/>
                 <outlet property="threeBtnView" destination="XMA-5t-egP" id="i6S-xe-6Ah"/>
             </connections>
-            <point key="canvasLocation" x="-129" y="-283"/>
+            <point key="canvasLocation" x="-94" y="-218"/>
         </view>
     </objects>
     <resources>

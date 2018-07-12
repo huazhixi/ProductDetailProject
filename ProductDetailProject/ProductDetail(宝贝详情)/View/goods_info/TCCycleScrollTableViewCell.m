@@ -7,7 +7,10 @@
 //
 
 #import "TCCycleScrollTableViewCell.h"
-#import "PBView.h"
+#import "Masonry.h"
+#import "02 Macro.h"
+#import "03 Constant.h"
+//#import "PBView.h"
 
 @implementation TCCycleScrollTableViewCell
 
@@ -60,10 +63,10 @@
     }];
 }
 - (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
-    PBView * pbView = [[PBView alloc] init];
-    pbView.imgUrlArr = self.bannerShowUrlArray;
-    pbView.currentIndex = index;
-    [pbView show];
+//    PBView * pbView = [[PBView alloc] init];
+//    pbView.imgUrlArr = self.bannerShowUrlArray;
+//    pbView.currentIndex = index;
+//    [pbView show];
 }
 #pragma mark - 懒加载
 -(SDCycleScrollView *)cycleScrollView {

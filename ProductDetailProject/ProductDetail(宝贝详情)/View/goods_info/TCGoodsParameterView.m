@@ -7,6 +7,8 @@
 //
 
 #import "TCGoodsParameterView.h"
+#import "03 Constant.h"
+#import "02 Macro.h"
 
 @implementation TCGoodsParameterView
 -(void)awakeFromNib {

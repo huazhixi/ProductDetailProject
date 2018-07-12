@@ -3,8 +3,9 @@
  */
 
 #import "TCBabyDeailtyBottomToolsView.h"
-#import "WZLBadgeImport.h"
-#import "TCShopCartViewController.h"
+#import "EasyShowView.h"
+//#import "WZLBadgeImport.h"
+//#import "TCShopCartViewController.h"
 
 @interface TCBabyDeailtyBottomToolsView()
 

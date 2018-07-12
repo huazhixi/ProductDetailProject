@@ -19,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sbB-gS-Apj" userLabel="guiGeView">
-                        <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="40.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择规格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnN-zl-7IK">
                                 <rect key="frame" x="10" y="11.5" width="65.5" height="18.5"/>
@@ -31,7 +31,7 @@
                                 <rect key="frame" x="334" y="15" width="6" height="11"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knF-h7-P8M">
-                                <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="40.5"/>
                                 <connections>
                                     <action selector="chooseGuigeBtnClick" destination="KGk-i7-Jjw" eventType="touchUpInside" id="W2E-99-5v3"/>
                                 </connections>
@@ -51,19 +51,19 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFn-KO-b2p" userLabel="shouHuoView">
-                        <rect key="frame" x="0.0" y="40.5" width="350" height="41"/>
+                        <rect key="frame" x="0.0" y="41" width="350" height="40"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品参数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWk-PU-enS">
-                                <rect key="frame" x="10" y="11.5" width="52.5" height="19"/>
+                                <rect key="frame" x="10" y="11" width="52.5" height="19"/>
                                 <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackRightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="WzS-CZ-yL0">
-                                <rect key="frame" x="334" y="15" width="6" height="11"/>
+                                <rect key="frame" x="334" y="14.5" width="6" height="11"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikg-P7-STv">
-                                <rect key="frame" x="0.0" y="0.0" width="350" height="40.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="39.5"/>
                                 <connections>
                                     <action selector="goodsParamBtnClick" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wsh-uu-2k9"/>
                                 </connections>
@@ -83,22 +83,22 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="de5-u3-vGa" userLabel="youHuiJuanView">
-                        <rect key="frame" x="0.0" y="92" width="350" height="39.5"/>
+                        <rect key="frame" x="0.0" y="91.5" width="350" height="40"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="littlecoupon" translatesAutoresizingMaskIntoConstraints="NO" id="zVD-WN-slt">
-                                <rect key="frame" x="10" y="11.5" width="21" height="16"/>
+                                <rect key="frame" x="10" y="12" width="21" height="16"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠券领取" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD8-SG-rT7">
-                                <rect key="frame" x="36" y="10.5" width="65.5" height="18.5"/>
+                                <rect key="frame" x="36" y="11" width="65.5" height="18.5"/>
                                 <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackRightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="kQ2-F1-vph">
-                                <rect key="frame" x="334" y="14" width="6" height="11"/>
+                                <rect key="frame" x="334" y="14.5" width="6" height="11"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHJ-hq-xwD">
-                                <rect key="frame" x="0.0" y="0.0" width="350" height="40"/>
+                                <rect key="frame" x="0.0" y="0.0" width="350" height="40.5"/>
                                 <connections>
                                     <action selector="youhuijuanBtnClick" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Iap-ok-1Z5"/>
                                 </connections>
@@ -135,7 +135,7 @@
                     <constraint firstItem="de5-u3-vGa" firstAttribute="top" secondItem="JFn-KO-b2p" secondAttribute="bottom" constant="10" id="xxf-aY-Vo9"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-279" y="-536"/>
+            <point key="canvasLocation" x="-373" y="-523"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -4,8 +4,7 @@
 
 #import "TCBabyDeailtyComentVC.h"
 #import "TCBabyDeailtyCommentListVC.h"
-#import "UIColor+hex.h"
-#import "UIImage+ColorCreateImage.h"
+//#import "UIImage+ColorCreateImage.h"
 
 
 @interface TCBabyDeailtyComentVC ()<LLSegmentBarDelegate>
@@ -34,12 +33,11 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self.baseNavController.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff" alpha:1.0]] forBarMetrics:UIBarMetricsDefault];
+//    [self.baseNavController.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff" alpha:1.0]] forBarMetrics:UIBarMetricsDefault];
     self.segmentBar.alpha = 1.0;
 }
 
 -(void)setUI {
-    NSInteger barH = 0;
     self.segmentVC.segmentBar.frame = CGRectMake(0, kStatusBarAndNavigationBarHeight + 1, SCREEN_WIDTH, 35);
     self.segmentVC.segmentBar.backgroundColor = [UIColor whiteColor];
     self.segmentVC.view.frame = CGRectMake(0, kStatusBarAndNavigationBarHeight, SCREEN_WIDTH, SCREEN_HEIGHT - kStatusBarAndNavigationBarHeight);

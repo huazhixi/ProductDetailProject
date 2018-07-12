@@ -2,8 +2,11 @@
  宝贝详情--图文详情
  */
 #import "TCBabyDeailtyWebVC.h"
-#import "UIColor+hex.h"
-#import "UIImage+ColorCreateImage.h"
+//#import "UIColor+hex.h"
+//#import "UIImage+ColorCreateImage.h"
+#import "03 Constant.h"
+#import "02 Macro.h"
+
 @interface TCBabyDeailtyWebVC ()<UIWebViewDelegate>
 
 @property(nonatomic,strong)UIWebView *babyDeailtyWeb;
@@ -20,13 +23,13 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.baseNavController.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff" alpha:1.0]] forBarMetrics:UIBarMetricsDefault];
+//    [self.baseNavController.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff" alpha:1.0]] forBarMetrics:UIBarMetricsDefault];
     self.segmentBar.alpha = 1.0;
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    [self.baseNavController.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff" alpha:1.0]] forBarMetrics:UIBarMetricsDefault];
+//    [self.baseNavController.navigationBar setBackgroundImage:[UIImage createImageWithColor:[UIColor colorWithHexString:@"#ffffff" alpha:1.0]] forBarMetrics:UIBarMetricsDefault];
     self.segmentBar.alpha = 1.0;
 }
 - (void)setHtmlStr:(NSString *)htmlStr {

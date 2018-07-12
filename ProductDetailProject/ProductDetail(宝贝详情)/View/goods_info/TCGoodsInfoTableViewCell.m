@@ -7,6 +7,9 @@
 //
 
 #import "TCGoodsInfoTableViewCell.h"
+#import "03 Constant.h"
+#import "02 Macro.h"
+#import "YYText.h"
 
 @interface TCGoodsInfoTableViewCell()
 @property (weak, nonatomic) IBOutlet UIImageView *collectImgView;

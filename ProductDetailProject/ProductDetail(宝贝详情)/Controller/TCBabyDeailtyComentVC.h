@@ -7,15 +7,18 @@
 //
 
 #import "BaseViewController.h"
-#import "BaseNatigationViewController.h"
-
+//#import "BaseNatigationViewController.h"
+#import "02 Macro.h"
+#import "03 Constant.h"
+#import "LLSegmentBar.h"
+#import "LLSegmentBarVC.h"
 #import "TCGoodsModel.h"
 
 @interface TCBabyDeailtyComentVC : BaseViewController
 
 @property (nonatomic,strong)LLSegmentBar *segmentBar;
 
-@property (nonatomic,strong)BaseNatigationViewController *baseNavController;
+//@property (nonatomic,strong)BaseNatigationViewController *baseNavController;
 
 @property (nonatomic,strong)UIViewController *fatherVC;
 /**   */

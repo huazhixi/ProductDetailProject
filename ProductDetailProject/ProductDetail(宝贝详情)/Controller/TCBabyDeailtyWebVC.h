@@ -7,13 +7,14 @@
 //
 
 #import "BaseViewController.h"
-#import "BaseNatigationViewController.h"
+#import "LLSegmentBar.h"
+//#import "BaseNatigationViewController.h"
 
 @interface TCBabyDeailtyWebVC : BaseViewController
 
 @property (nonatomic,strong)LLSegmentBar *segmentBar;
 
-@property (nonatomic,strong)BaseNatigationViewController *baseNavController;
+//@property (nonatomic,strong)BaseNatigationViewController *baseNavController;
 
 @property (nonatomic,strong)UIViewController *fatherVC;
 /**   */

@@ -2,6 +2,10 @@
  宝贝评价列表
  */
 #import "TCBabyDeailtyCommentListVC.h"
+#import "EasyLoadingView.h"
+#import "03 Constant.h"
+#import "02 Macro.h"
+#import "UITableView+FDTemplateLayoutCell.h"
 
 @implementation TCBabyDeailtyCommentListVC
 
@@ -18,32 +22,6 @@
  */
 - (void)fetchGoodsCommentData {
     
-    typeof(self) _weakSelf = self;
-    [EasyLoadingView showLoading];
-    
-    NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"id"] = _goodsID;
-    params[@"type"] = _type;
-    params[@"page"] = @"1";
-    
-    [[HRRequest manager] POST:@"Product/productComment" para:params success:^(id data) {
-        [EasyLoadingView hidenLoading];
-        NSLog(@"%@", data);
-        TCCommentModel *model = [TCCommentModel mj_objectWithKeyValues:data[@"data"]];
-        [_weakSelf.commentArray addObjectsFromArray:model.data];
-        [_weakSelf.commentListView configBlankPage:HXEasyBlankPageViewTypeNoData hasData:_weakSelf.commentArray.count hasError:_weakSelf.commentArray.count > 0 noDateImage:@"wushuju" noDataTitle:@"暂无数据"  reloadBtnHidden:YES reloadBtnTitle:@"" reloadButtonBlock:^(id sender) {
-        }];
-        if (_weakSelf.commentArray.count) {
-            [_weakSelf.commentListView reloadData];            
-        }
-    } faiulre:^(NSString *errMsg) {
-        [EasyLoadingView hidenLoading];
-        if ([errMsg isEqual:ERROR_MESSAGE] || [errMsg isEqual:NET_NOT_WORK]) {
-            [EasyTextView showErrorText:errMsg];
-        } else {
-            [EasyTextView showInfoText:errMsg];
-        }
-    }];
 }
 #pragma mark - UITableViewDelegate,UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

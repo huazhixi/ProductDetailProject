@@ -1,0 +1,75 @@
+{
+    "status": 200,
+    "message": "获取成功",
+    "data": {
+        "goodsInfo": {
+            "goods_id": 402,
+            "store_id": 29,
+            "goods_name": "红豆家纺50S天丝花型四件套",
+            "price": "318.00",
+            "market_price": "658.00",
+            "sales": 0,
+            "default_image": "http://tp.homebank.shop/homebank/goods_images/2018-06/152785508870660002.jpg",
+            "parameters": "",
+            "express_template_id": 23,
+            "sale_service": "",
+            "banner": [
+                       "/homebank/goods_images/2018-06/152785508870660002.jpg",
+                       "/homebank/goods_images/2018-06/152785508931333657.jpg",
+                       "/homebank/goods_images/2018-06/152785509175264274.jpg",
+                       "/homebank/goods_images/2018-06/152785509259516109.jpg",
+                       "/homebank/goods_images/2018-06/152785509439886103.jpg"
+                       ],
+            "express_info": "普通快递 "
+        },
+        "description": "http://www.tiancang.shop/goods/goods_content?gid=402",
+        "collection": 0,
+        "cartNums": 0,
+        "storeInfo": {
+            "store_id": 29,
+            "store_name": "红豆家纺旗舰店",
+            "sgrade": 0,
+            "evaluation_desc": "5.0",
+            "evaluation_service": "5.0",
+            "evaluation_speed": "5.0",
+            "store_logo": "",
+            "tel": "18236777893",
+            "store_qq": "",
+            "goodsCount": 9,
+            "newCount": 0,
+            "collectCount": 1
+        },
+        "commentCount": 0,
+        "goodCount": 0,
+        "commonlyCount": 0,
+        "badCount": 0,
+        "pictureCount": 0,
+        "comment": [],
+        "recommend": [
+                      {
+                      "goods_id": 401,
+                      "goods_name": "红豆家纺60S天丝花型四件套",
+                      "price": "388.00",
+                      "default_image": "/homebank/goods_images/2018-06/152785486861524571.jpg"
+                      },
+                      {
+                      "goods_id": 402,
+                      "goods_name": "红豆家纺50S天丝花型四件套",
+                      "price": "318.00",
+                      "default_image": "/homebank/goods_images/2018-06/152785508870660002.jpg"
+                      },
+                      {
+                      "goods_id": 405,
+                      "goods_name": "红豆家纺活性磨毛四件套",
+                      "price": "320.00",
+                      "default_image": "/homebank/goods_images/2018-06/152785527347647935.jpg"
+                      }
+                      ],
+        "parameter": [],
+        "position": {
+            "province": "河南省",
+            "city": "郑州市",
+            "freight": 0
+        }
+    }
+}
