@@ -1,0 +1,6 @@
+framework module WRNavigationBar {
+  umbrella header "WRNavigationBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

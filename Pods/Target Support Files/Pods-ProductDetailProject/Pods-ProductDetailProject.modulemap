@@ -1,0 +1,6 @@
+framework module Pods_ProductDetailProject {
+  umbrella header "Pods-ProductDetailProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,37 @@
+use_frameworks!
+platform :ios,'8.0'
+target 'ProductDetailProject' do
+    
+    pod 'AFNetworking'
+    # 键盘管理
+    pod 'IQKeyboardManager'
+    # AutoLayout
+    pod 'Masonry'
+    # MBProgressHUD + Customizations
+    pod 'MBProgressHUD'
+    # An easy way to use pull-to-refresh.
+    pod 'MJRefresh'
+    # 转换速度快、使用简单方便的字典转模型框架
+    pod 'MJExtension'
+    # iOS中一款高度可定制性商品计数按钮(京东/淘宝/饿了么/美团外卖/百度外卖样式)
+    pod 'PPNumberButton'
+    # Autoscroll Banner. 无限循环图片、文字轮播器。
+    pod 'SDCycleScrollView'
+    # 图片缓存
+    pod 'SDWebImage'
+    # HUD
+    pod 'SVProgressHUD'
+    # 强大,易用,完全自定义的提醒视图，弹出视图
+    pod 'TYAlertController'
+    # 简单，强大，高度定制，页面控制器
+    pod 'TYPagerController'
+    # Template auto layout cell for automatically UITableViewCell height calculating
+    pod 'UITableView+FDTemplateLayoutCell'
+    # 超简单！！！ 一行代码设置状态栏、导航栏按钮、标题、颜色、透明度，移动等
+    pod 'WRNavigationBar','~>1.2.0'
+    # YYKit
+    pod 'YYText'
+    # Popup your custom view is easy, support custom mask style, transition effects and gesture to drag.
+    pod 'zhPopupController', '~> 1.0.2'
+end
+

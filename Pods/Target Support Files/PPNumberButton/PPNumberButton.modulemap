@@ -1,0 +1,6 @@
+framework module PPNumberButton {
+  umbrella header "PPNumberButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
