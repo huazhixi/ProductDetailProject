@@ -3,6 +3,8 @@ platform :ios,'8.0'
 target 'ProductDetailProject' do
     
     pod 'AFNetworking'
+    # 一款非常简单的展示工具。提示框，加载框，空白页提示，alert弹出框。一行代码搞定所有操作。
+    pod 'EasyShowView','~>2.1'
     # 键盘管理
     pod 'IQKeyboardManager'
     # AutoLayout
