@@ -1,0 +1,132 @@
+{
+    "recommendProduct": [
+                         {
+                         "goods_id": 1281,
+                         "store_id": 1,
+                         "goods_name": "仰韶定制酒知己浓香型白酒50°",
+                         "price": "158.00",
+                         "market_price": "198.00",
+                         "default_image": "/homebank/goods_images/2018-06/152903336492796561.jpg"
+                         },
+                         {
+                         "goods_id": 258,
+                         "store_id": 1,
+                         "goods_name": "泰国原装红牛M-150功能性饮料250ml/听",
+                         "price": "5.90",
+                         "market_price": "8.50",
+                         "default_image": "/homebank/goods_images/2018-05/152775639021878940.jpg"
+                         },
+                         {
+                         "goods_id": 515,
+                         "store_id": 24,
+                         "goods_name": "九洲祥台湾电木茶盘",
+                         "price": "648.00",
+                         "market_price": "2970.00",
+                         "default_image": "/homebank/goods_images/2018-06/152790443572140024.jpg"
+                         },
+                         {
+                         "goods_id": 263,
+                         "store_id": 1,
+                         "goods_name": "韩国超能婴儿桃花面膜5片 补水保湿滋润嫩白",
+                         "price": "79.00",
+                         "market_price": "99.00",
+                         "default_image": "/homebank/goods_images/2018-05/152775686171880399.jpg"
+                         },
+                         {
+                         "goods_id": 271,
+                         "store_id": 1,
+                         "goods_name": "韩国A. by Bom超能婴儿叶子面膜冰凝叶清凉舒缓补水保湿10片",
+                         "price": "120.00",
+                         "market_price": "178.00",
+                         "default_image": "/homebank/goods_images/2018-05/152775754286608955.jpg"
+                         },
+                         {
+                         "goods_id": 788,
+                         "store_id": 32,
+                         "goods_name": "臻净酵素果蔬餐具洗涤剂1000g/1瓶",
+                         "price": "40.80",
+                         "market_price": "68.00",
+                         "default_image": "/homebank/goods_images/2018-06/152791997888980142.jpg"
+                         },
+                         {
+                         "goods_id": 804,
+                         "store_id": 32,
+                         "goods_name": "艾蜂堂天然多糖餐具果蔬洗液1000ml*2",
+                         "price": "45.60",
+                         "market_price": "76.00",
+                         "default_image": "/homebank/goods_images/2018-06/152792052196040429.jpg"
+                         },
+                         {
+                         "goods_id": 553,
+                         "store_id": 30,
+                         "goods_name": "小户赛古树生茶250g/块",
+                         "price": "980.00",
+                         "market_price": "1360.00",
+                         "default_image": "/homebank/goods_images/2018-06/152790682139374413.jpg"
+                         },
+                         {
+                         "goods_id": 809,
+                         "store_id": 32,
+                         "goods_name": "艾蜂堂柠檬植物海洋生物自洁焕新洗衣液1000ml*2瓶",
+                         "price": "45.60",
+                         "market_price": "76.00",
+                         "default_image": "/homebank/goods_images/2018-06/152792066987630055.jpg"
+                         },
+                         {
+                         "goods_id": 556,
+                         "store_id": 30,
+                         "goods_name": "冰岛地界古树生茶357g/饼",
+                         "price": "1180.00",
+                         "market_price": "1680.00",
+                         "default_image": "/homebank/goods_images/2018-06/152790694760274621.jpg"
+                         },
+                         {
+                         "goods_id": 1326,
+                         "store_id": 1,
+                         "goods_name": "懒货休闲食品果干蔓越莓味圣女果味猕猴桃味曲奇饼干小吃零食220g",
+                         "price": "10.90",
+                         "market_price": "15.90",
+                         "default_image": "/homebank/goods_images/2018-06/153035124025170191.jpg"
+                         },
+                         {
+                         "goods_id": 307,
+                         "store_id": 1,
+                         "goods_name": "JM珍珠全身防水防晒喷雾180ml/瓶",
+                         "price": "69.00",
+                         "market_price": "118.00",
+                         "default_image": "/homebank/goods_images/2018-05/152776075482437167.jpg"
+                         },
+                         {
+                         "goods_id": 569,
+                         "store_id": 30,
+                         "goods_name": "2018生肖饼金狗旺财357g/饼",
+                         "price": "688.00",
+                         "market_price": "988.00",
+                         "default_image": "/homebank/goods_images/2018-06/152790737614521098.jpg"
+                         },
+                         {
+                         "goods_id": 571,
+                         "store_id": 30,
+                         "goods_name": "大雪山古树普洱生茶357g/饼",
+                         "price": "2800.00",
+                         "market_price": "3680.00",
+                         "default_image": "/homebank/goods_images/2018-06/152790746690978288.jpg"
+                         },
+                         {
+                         "goods_id": 830,
+                         "store_id": 32,
+                         "goods_name": "艾蜂堂王浆多肽新肌护肤尊享七件套",
+                         "price": "874.80",
+                         "market_price": "1458.00",
+                         "default_image": "/homebank/goods_images/2018-06/152792139938876566.jpg"
+                         },
+                         {
+                         "goods_id": 838,
+                         "store_id": 32,
+                         "goods_name": "艾蜂堂金王浆息敏洁面泡沫72ml/瓶",
+                         "price": "40.80",
+                         "market_price": "68.00",
+                         "default_image": "/homebank/goods_images/2018-06/152792191788760427.jpg"
+                         }
+                         ]
+}

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ProductListViewController.h
 //  ProductDetailProject
 //
 //  Created by Huazhixi on 2018/7/11.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ProductListViewController : UIViewController
 
 @end
-
