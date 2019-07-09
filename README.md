@@ -11,7 +11,7 @@
 - [ORSKUDataFilter](https://github.com/SunriseOYR/SKUDataFilter) **SKU 商品属性组合算法**(核心)
 
 #### 效果展示
-![商品详情](http://7xq27z.com1.z0.glb.clouddn.com/productDetail.gif)
+![商品详情](http://upload-images.jianshu.io/upload_images/1319216-f1654bebe0a61dcb.gif?imageMogr2/auto-orient/strip)
 
 #### 注:
 - 项目中所有数据均为本地json数据(Resource(json数据))，结合自己项目，让后台根据本地文件返回数据格式即可。
